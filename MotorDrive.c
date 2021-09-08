@@ -155,6 +155,8 @@
 #define     EXCITATING_TIME  8197        //励磁ON継続時間(8197=1sec)
 /* 触読用　インジケータLED*/
 #define     BIT_PORTA_LED_ON    b0000_0100
+/* 昇圧IC CE*/
+#define     VOUT_UP_CE  b0000_0001
 
 #define     CHANGE_POSITION_OPEN    1       //変化ポイント　OPEN
 #define     CHANGE_POSITION_SHORT   0       //変化ポイント　SHORT
@@ -1423,6 +1425,10 @@ void StartPulseOutM1(void)
 void SetMotorStartSPK(void)
 {
     if (excitatingEnableBit & (BIT_MOTOR_M0 | BIT_MOTOR_M1)) {//励磁ONオプションなら
+        
+        /* 昇圧開始 */
+        LATA |= VOUT_UP_CE;  //CE=Hで昇圧開始
+    
         /**-- 割り込みハンドラをSPK出力に変更する --**/
         TMR2_SetInterruptHandler(TMR2_Interrupt_SPK);
         // clear the TMR2 interrupt flag
@@ -1453,7 +1459,7 @@ void SetMotorStartSPK(void)
         TMR2_StartTimer();
 
     } else {//励磁OFFオプションなら
-        SetExcitatingOutOffData(); //励磁出力OFFF
+        SetExcitatingOutOffData(); //励磁出力OFF
     }
 
 }
@@ -1468,6 +1474,8 @@ void SetMotorStartSPK(void)
 
 void SetMotorStopSPK(void)
 {
+    /* 昇圧停止 */
+    LATA &= ~VOUT_UP_CE;
     /**-- タイマー2ストップ --**/
     TMR2_StopTimer();
     // clear the TMR2 interrupt flag
