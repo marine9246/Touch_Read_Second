@@ -6391,7 +6391,7 @@ extern void SpiCmdFunc_FwdPulseNormal( UB motor_no );
 
 extern void SPIControl_SetNotification( UB motor_no );
 # 6 "MotorDrive.c" 2
-# 371 "MotorDrive.c"
+# 373 "MotorDrive.c"
 enum PULSE_CHANGE_POSITION {
     PULSE_CHANGE_START_P0 = (0 + 1),
     PULSE_CHANGE_STOP_P0 = (PULSE_CHANGE_START_P0 + 5),
@@ -6434,7 +6434,7 @@ enum ID_PULSE_OUT_STEP {
     ID_PULSE_OUT_STEP_WAIT = (ID_PULSE_OUT_STEP_P1 + 3),
     ID_PULSE_OUT_STEP_MAX = (ID_PULSE_OUT_STEP_P1 + 4)
 };
-# 421 "MotorDrive.c"
+# 423 "MotorDrive.c"
 enum ID_SEARCH_STAT {
     ID_SEARCH_FINE_POS_1ST = 0,
     ID_SEARCH_FINE_ROUGH_POS,
@@ -6463,7 +6463,7 @@ enum ID_DETECT_LOAD_TYPE {
     ID_DETECT_LOAD_ROUGH_CONT = (ID_DETECT_LOAD_ROUGH + 10),
     ID_DETECT_LOAD_MAX
 };
-# 474 "MotorDrive.c"
+# 476 "MotorDrive.c"
 static const H TblMaxSteps[ 2 ] = {
     360,
     360
@@ -6473,7 +6473,7 @@ static const H TblMaxSearchSteps[ 2 ] = {
     360 * 3,
     360 * 3
 };
-# 504 "MotorDrive.c"
+# 506 "MotorDrive.c"
 void SetPulseOutLATxWork_M0_FWD_POL0_P1(void);
 void SetPulseOutLATxWork_M0_FWD_POL0_P2(void);
 void SetPulseOutLATxWork_M0_FWD_POL0_OFF(void);
@@ -6759,7 +6759,7 @@ static void ( * cbAfterDetectLoadFunc[ 2 ])(UB motor_no);
 
 static UB doubleInterval;
 static H missingDetectFinePosition;
-# 799 "MotorDrive.c"
+# 801 "MotorDrive.c"
 void InitPulsePositionTable(UB motor_no)
 {
     if (0 == motor_no) {
@@ -6767,9 +6767,9 @@ void InitPulsePositionTable(UB motor_no)
     } else {
         TblM1PulseChangePositionLast = PULSE_CHANGE_OFF;
     }
-# 856 "MotorDrive.c"
+# 858 "MotorDrive.c"
 }
-# 867 "MotorDrive.c"
+# 869 "MotorDrive.c"
 void TMR2_Interrupt(void)
 {
 
@@ -7006,7 +7006,7 @@ void TMR2_Interrupt(void)
         TMR2_StopTimer();
     }
 }
-# 1112 "MotorDrive.c"
+# 1114 "MotorDrive.c"
 void TMR2_Interrupt_SPK(void)
 {
     if (spkOutTrisRequestFlug == 1) {
@@ -7033,29 +7033,28 @@ void TMR2_Interrupt_SPK(void)
         TRISA = dataTRISA;
         TRISB = dataTRISB;
         TRISC = dataTRISC;
+    }
+
+    if (excitatingOffMaskTime > 0) {
+
+        excitatingOffMaskTime--;
+        PIR2bits.C1IF = 0;
+        PIR2bits.C2IF = 0;
 
 
-        if (excitatingOffMaskTime > 0) {
-
-            excitatingOffMaskTime--;
-            PIR2bits.C1IF = 0;
-            PIR2bits.C2IF = 0;
+    }
 
 
-        }
+    if ((spkReqVrsCheckBit & 0x01) || (spkReqVrsCheckBit & 0x02)) {
+        spkReqVrsCheckBit &= (UB) (~(0x01 | 0x02));
 
+        if (excitatingOffMaskTime == 0) {
 
-        if ((spkReqVrsCheckBit & 0x01) || (spkReqVrsCheckBit & 0x02)) {
-            spkReqVrsCheckBit &= (UB) (~(0x01 | 0x02));
-
-            if (excitatingOffMaskTime == 0) {
-
-                SpkVrsCheck();
-            }
-
+            SpkVrsCheck();
         }
 
     }
+
 
 
     if (excitatingTime > 0) {
@@ -7093,7 +7092,7 @@ void TMR2_Interrupt_SPK(void)
     }
 
 }
-# 1208 "MotorDrive.c"
+# 1209 "MotorDrive.c"
 void WatchMotorDriveFinish(void)
 {
     void ( *func)(UB motor_no);
@@ -7142,7 +7141,7 @@ void WatchMotorDriveFinish(void)
         }
     }
 }
-# 1268 "MotorDrive.c"
+# 1269 "MotorDrive.c"
 void StartPulseOutM0(void)
 {
     (INTCONbits.PEIE = 0);
@@ -7288,10 +7287,14 @@ void StartPulseOutM1(void)
 
     (INTCONbits.PEIE = 1);
 }
-# 1423 "MotorDrive.c"
+# 1424 "MotorDrive.c"
 void SetMotorStartSPK(void)
 {
     if (excitatingEnableBit & (0x01 | 0x02)) {
+
+
+        LATA |= 0x01;
+
 
         TMR2_SetInterruptHandler(TMR2_Interrupt_SPK);
 
@@ -7326,9 +7329,11 @@ void SetMotorStartSPK(void)
     }
 
 }
-# 1469 "MotorDrive.c"
+# 1474 "MotorDrive.c"
 void SetMotorStopSPK(void)
 {
+
+    LATA &= ~0x01;
 
     TMR2_StopTimer();
 
@@ -7346,21 +7351,21 @@ void SetMotorStopSPK(void)
 
     TMR2_SetInterruptHandler(TMR2_Interrupt);
 }
-# 1497 "MotorDrive.c"
+# 1504 "MotorDrive.c"
 void SetMotorEnableExcitating(UB motor_no)
 {
     motorBitOperation = (UB) (0x01 << motor_no);
 
     excitatingEnableBit |= (UB) (motorBitOperation);
 }
-# 1512 "MotorDrive.c"
+# 1519 "MotorDrive.c"
 void SetMotorDisableExcitating(UB motor_no)
 {
     motorBitOperation = (UB) (0x01 << motor_no);
 
     excitatingEnableBit &= (UB) (~motorBitOperation);
 }
-# 1536 "MotorDrive.c"
+# 1543 "MotorDrive.c"
 void SetDriveType(UB motor_no, UB drive_type)
 {
 
@@ -7459,12 +7464,12 @@ void SetCheckLoadPosition(UB motor_no, UB sw)
 
     }
 }
-# 1643 "MotorDrive.c"
+# 1650 "MotorDrive.c"
 void SetAfterMotorStopFunc(UB motor_no, void ( * func)(UB motor_no))
 {
     cbAfterMotorStopFunc[ motor_no ] = func;
 }
-# 1656 "MotorDrive.c"
+# 1663 "MotorDrive.c"
 void SetAfterDetectLoadFunc(UB motor_no, void ( * func)(UB motor_no))
 {
     cbAfterDetectLoadFunc[ motor_no ] = func;
@@ -7476,7 +7481,7 @@ void *GetAfterDetectLoadFunc(UB motor_no)
 {
     return cbAfterDetectLoadFunc[ motor_no ];
 }
-# 1676 "MotorDrive.c"
+# 1683 "MotorDrive.c"
 void SetMotorDirection(UB motor_no, UB dir)
 {
     motorBitOperation = (UB) (0x01 << motor_no);
@@ -7492,14 +7497,14 @@ void SetMotorDirection(UB motor_no, UB dir)
     }
 
 }
-# 1700 "MotorDrive.c"
+# 1707 "MotorDrive.c"
 void SetMotorStepCounter(UB motor_no, H steps)
 {
     motorStepCounterSet[ motor_no ] = steps;
 
     PriorUpdateCorrentPosition(motor_no);
 }
-# 1715 "MotorDrive.c"
+# 1722 "MotorDrive.c"
 void CalcMotorFwdStepCounter(UB motor_no)
 {
     H steps;
@@ -7516,7 +7521,7 @@ void CalcMotorFwdStepCounter(UB motor_no)
 
     PriorUpdateCorrentPosition(motor_no);
 }
-# 1740 "MotorDrive.c"
+# 1747 "MotorDrive.c"
 void CalcMotorStepCounter(UB motor_no)
 {
     H steps;
@@ -7558,7 +7563,7 @@ void CalcMotorStepCounter(UB motor_no)
 
     PriorUpdateCorrentPosition(motor_no);
 }
-# 1790 "MotorDrive.c"
+# 1797 "MotorDrive.c"
 void SetMotorAddShakePulse(UB motor_no, UB sw)
 {
     motorBitOperation = (UB) (0x01 << motor_no);
@@ -7573,7 +7578,7 @@ void SetMotorAddShakePulse(UB motor_no, UB sw)
 
     }
 }
-# 1821 "MotorDrive.c"
+# 1828 "MotorDrive.c"
 void SetMotorFrequency(UB motor_no, UB type, UB set_freq)
 {
     if (FREQ_SET_SELF_CONTROL_NORMAL == type) {
@@ -7603,7 +7608,7 @@ void SetMotorFrequency(UB motor_no, UB type, UB set_freq)
 
     }
 }
-# 1859 "MotorDrive.c"
+# 1866 "MotorDrive.c"
 void SetMotorStart(UB motor_no)
 {
     if (motor_no == 0) {
@@ -7616,7 +7621,7 @@ void SetMotorStart(UB motor_no)
 
     }
 }
-# 1880 "MotorDrive.c"
+# 1887 "MotorDrive.c"
 void SetMotorPositionSearchStart(UB motor_no)
 {
 
@@ -7631,7 +7636,7 @@ void SetMotorPositionSearchStart(UB motor_no)
 
     SetMotorStart(motor_no);
 }
-# 1903 "MotorDrive.c"
+# 1910 "MotorDrive.c"
 void SetMotorCorrectPositionStart(UB motor_no)
 {
     motorBitOperation = (UB) (0x01 << motor_no);
@@ -7647,7 +7652,7 @@ void SetMotorCorrectPositionStart(UB motor_no)
 
 
 }
-# 1927 "MotorDrive.c"
+# 1934 "MotorDrive.c"
 void InitPositionSearch(UB motor_no)
 {
     UB i;
@@ -7674,7 +7679,7 @@ void InitPositionSearch(UB motor_no)
 
     detectLoadPositionTypePtr[ motor_no ] = &detectLoadPositionType[ motor_no ][ 0 ];
 }
-# 1962 "MotorDrive.c"
+# 1969 "MotorDrive.c"
 void CorrectPosition(H *pos, H max)
 {
     if (max == 0) {
@@ -7689,7 +7694,7 @@ void CorrectPosition(H *pos, H max)
         *pos += max;
     }
 }
-# 1986 "MotorDrive.c"
+# 1993 "MotorDrive.c"
 void PriorUpdateCorrentPosition(UB motor_no)
 {
     motorBitOperation = (UB) (0x01 << motor_no);
@@ -7707,7 +7712,7 @@ void PriorUpdateCorrentPosition(UB motor_no)
         CorrectPosition(&currentPosition[ motor_no ], TblMaxSteps[ motor_no ]);
     }
 }
-# 2012 "MotorDrive.c"
+# 2019 "MotorDrive.c"
 void UpdateTargetPosition(UB motor_no, H steps)
 {
 
@@ -7716,7 +7721,7 @@ void UpdateTargetPosition(UB motor_no, H steps)
     CorrectPosition(&targetPosition[ motor_no ], TblMaxSteps[ motor_no ]);
 
 }
-# 2029 "MotorDrive.c"
+# 2036 "MotorDrive.c"
 void SetMotorStop(UB motor_no)
 {
     motorBitOperation = (UB) (0x01 << motor_no);
@@ -7724,7 +7729,7 @@ void SetMotorStop(UB motor_no)
     reqStopMotorBit |= motorBitOperation;
 
 }
-# 2046 "MotorDrive.c"
+# 2053 "MotorDrive.c"
 void AfterDetectedLoadPosition(UB motor_no)
 {
     H move_steps;
@@ -8036,7 +8041,7 @@ void AfterDetectedLoadPosition(UB motor_no)
 
 
 }
-# 2367 "MotorDrive.c"
+# 2374 "MotorDrive.c"
 void DetermineBasePosition(UB motor_no)
 {
     UB base_pos_index;
@@ -8078,7 +8083,7 @@ void DetermineBasePosition(UB motor_no)
     CorrectPosition(&detectBasePosition[ motor_no ], TblMaxSteps[ motor_no ]);
 
 }
-# 2418 "MotorDrive.c"
+# 2425 "MotorDrive.c"
 void UpdataHandPosition(UB motor_no)
 {
     UB i;
@@ -8093,7 +8098,7 @@ void UpdataHandPosition(UB motor_no)
 
     }
 }
-# 2450 "MotorDrive.c"
+# 2457 "MotorDrive.c"
 void UpdateCurrentPositionByFinePosition(UB motor_no)
 {
     UB i;
@@ -8116,7 +8121,7 @@ void UpdateCurrentPositionByFinePosition(UB motor_no)
         }
     }
 }
-# 2482 "MotorDrive.c"
+# 2489 "MotorDrive.c"
 void SaveLoadPosition(UB motor_no)
 {
     UB i;
@@ -8128,21 +8133,21 @@ void SaveLoadPosition(UB motor_no)
 
     loadPositionIndex[ motor_no ] = detectLoadPositionIndex[ motor_no ];
 }
-# 2502 "MotorDrive.c"
+# 2509 "MotorDrive.c"
 void ActivateHandPosition(UB motor_no)
 {
     motorBitOperation = (UB) (0x01 << motor_no);
 
     handPositionActiveBit |= motorBitOperation;
 }
-# 2517 "MotorDrive.c"
+# 2524 "MotorDrive.c"
 void DeactivateHandPosition(UB motor_no)
 {
     motorBitOperation = (UB) (0x01 << motor_no);
 
     handPositionActiveBit &= (UB) (~motorBitOperation);
 }
-# 2532 "MotorDrive.c"
+# 2539 "MotorDrive.c"
 void MoveTargetPosition(UB motor_no)
 {
 
@@ -8154,7 +8159,7 @@ void MoveTargetPosition(UB motor_no)
 
     SetMotorStart(motor_no);
 }
-# 2553 "MotorDrive.c"
+# 2560 "MotorDrive.c"
 void VerifyHandPosition_LoadPosition(UB motor_no)
 {
     UB i;
@@ -8176,7 +8181,7 @@ void VerifyHandPosition_LoadPosition(UB motor_no)
     CorrectPosition(&currentPosition[ motor_no ], TblMaxSteps[ motor_no ]);
 
     curt_pos = currentPosition[ motor_no ];
-# 2588 "MotorDrive.c"
+# 2595 "MotorDrive.c"
     for (i = 0; i < loadPositionIndex[ motor_no ]; i++) {
 
         load_pos = loadPosition[ motor_no ][ i ];
@@ -8213,7 +8218,7 @@ void VerifyHandPosition_LoadPosition(UB motor_no)
         MoveTargetPosition(motor_no);
     }
 }
-# 2634 "MotorDrive.c"
+# 2641 "MotorDrive.c"
 UB GetIsMotorActive(UB motor_no)
 {
     UB res = 0;
@@ -8235,7 +8240,7 @@ void SetMotorBitMotorNo(UB motor_no)
     motorNoOperation = motor_no;
     motorBitOperation = (UB) (0x01 << motor_no);
 }
-# 2663 "MotorDrive.c"
+# 2670 "MotorDrive.c"
 void ComparatorOff(UB motor_no)
 {
     if (motor_no == 0) {
@@ -8282,7 +8287,7 @@ void ComparatorOn(UB motor_no)
 
     }
 }
-# 2717 "MotorDrive.c"
+# 2724 "MotorDrive.c"
 void VrsCheck(UB motor_no)
 {
     if (motor_no == 0) {
@@ -8298,7 +8303,7 @@ void VrsCheck(UB motor_no)
         PIR2bits.C2IF = 0;
     }
 }
-# 2740 "MotorDrive.c"
+# 2747 "MotorDrive.c"
 void SpkComparatorOff(void)
 {
     CM1CON0 = 0x14;
@@ -8327,7 +8332,7 @@ void SpkComparatorOn(void)
 
 
 }
-# 2776 "MotorDrive.c"
+# 2783 "MotorDrive.c"
 void SpkVrsCheck(void)
 {
     if ((PIR2bits.C1IF == 1) || (PIR2bits.C2IF == 1)) {
@@ -8341,7 +8346,7 @@ void SpkVrsCheck(void)
     }
 
 }
-# 2797 "MotorDrive.c"
+# 2804 "MotorDrive.c"
 void ExcitatingOutOff(void)
 {
 
@@ -8355,7 +8360,7 @@ void ExcitatingOutOff(void)
     }
 
 }
-# 2818 "MotorDrive.c"
+# 2825 "MotorDrive.c"
 void SetExcitatingOutOffData(void)
 {
 
@@ -8380,7 +8385,7 @@ void SetExcitatingOutOffData(void)
     LATA &= ~0x04;
 
 }
-# 2850 "MotorDrive.c"
+# 2857 "MotorDrive.c"
 void ExcitatingOutOn(void)
 {
 
@@ -8408,7 +8413,7 @@ void ExcitatingOutOn(void)
     excitatingStatusOn = 1;
     excitatingTime = 8197;
 }
-# 2887 "MotorDrive.c"
+# 2894 "MotorDrive.c"
 void SetDataTRISxWork_SPK_OPEN(void)
 {
     if (detectSpkTurnBit == 0) {
@@ -8445,7 +8450,7 @@ void SetDataTRISxWork_SPK_OPEN(void)
     }
 
 }
-# 2933 "MotorDrive.c"
+# 2940 "MotorDrive.c"
 void SetDataTRISxWork_SPK_SHORT(void)
 {
     dataTRISAWork_M0 = (0x00 | 0x00);
@@ -8517,7 +8522,7 @@ void SetOutPutLATX(void)
     LATC = pulseOutLATC;
 
 }
-# 3014 "MotorDrive.c"
+# 3021 "MotorDrive.c"
 void SetPulseOutLATxWork_M0_FWD_POL0_P1(void)
 {
     pulseOutLATAWork_M0 = 0x10;

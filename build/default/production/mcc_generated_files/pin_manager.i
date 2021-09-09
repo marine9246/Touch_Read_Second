@@ -5942,16 +5942,16 @@ void PIN_MANAGER_Initialize(void)
 
 
 
-    TRISA = 0x09;
+    TRISA = 0x08;
     TRISB = 0x50;
     TRISC = 0x60;
 
 
 
 
-    ANSELC = 0x0F;
+    ANSELC = 0x0E;
     ANSELB = 0x00;
-    ANSELA = 0x03;
+    ANSELA = 0x02;
 
 
 

@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.20\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\AG_demo_Touch_Read2.X.production.sym \
   --cmf=dist/default/production\AG_demo_Touch_Read2.X.production.cmf -z \
-  -Q16LF1509 -oC:\Users\user\AppData\Local\Temp\s5rk.2 \
+  -Q16LF1509 -oC:\Users\user\AppData\Local\Temp\s6cg.2 \
   --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/AG_demo_Touch_Read2.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=0211Fh-02137h -pstack=STACK \
@@ -30,7 +30,7 @@ Linker command line:
   -AIDLOC=08000h-08003h -DIDLOC=2 \
   -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pcinit=CODE \
   -pfunctab=ENTRY -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\user\AppData\Local\Temp\s5rk.o \
+  C:\Users\user\AppData\Local\Temp\s6cg.o \
   dist/default/production\AG_demo_Touch_Read2.X.production.o 
 
 Object code version is 3.11
@@ -40,7 +40,7 @@ Machine type is 16LF1509
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\user\AppData\Local\Temp\s5rk.o
+C:\Users\user\AppData\Local\Temp\s6cg.o
                 end_init                             1C       1C        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2        0       4
@@ -48,139 +48,139 @@ dist/default/production\AG_demo_Touch_Read2.X.production.o
                 cinit                                1E       1E       3F        8       0
                 intentry                              4        4       18        8       0
                 config                             8007     8007        2        0       4
-                text135                            104F     104F        1     209E       0
-                text134                            10AF     10AF        B     215E       0
-                text133                            111C     111C        F     2238       0
-                text132                            10D0     10D0        C     21A0       0
-                text131                            13CC     13CC       13     2798       0
-                text130                            15A3     15A3       1C     2B46       0
-                text129                            112B     112B        F     2256       0
-                text128                            113A     113A        F     2274       0
-                text127                            1149     1149        F     2292       0
-                text126                            1158     1158        F     22B0       0
-                text125                            1167     1167        F     22CE       0
-                text124                            1176     1176        F     22EC       0
-                text123                            1185     1185        F     230A       0
-                text122                            141C     141C       17     2838       0
-                text121                            1194     1194        F     2328       0
-                text120                            1433     1433       17     2866       0
-                text119                            11A3     11A3        F     2346       0
-                text118                            1293     1293       10     2526       0
-                text117                            11B2     11B2        F     2364       0
-                text116                            12A3     12A3       10     2546       0
-                text115                            1306     1306       12     260C       0
-                text114                            11C1     11C1        F     2382       0
-                text113                            1478     1478       18     28F0       0
-                text112                            1318     1318       12     2630       0
-                text111                            11D0     11D0        F     23A0       0
-                text110                            1490     1490       18     2920       0
-                text109                            11DF     11DF        F     23BE       0
-                text108                            11EE     11EE        F     23DC       0
-                text107                            11FD     11FD        F     23FA       0
-                text106                            120C     120C        F     2418       0
-                text105                            121B     121B        F     2436       0
-                text104                            122A     122A        F     2454       0
-                text103                            1239     1239        F     2472       0
-                text102                            144A     144A       17     2894       0
-                text101                            1248     1248        F     2490       0
-                text100                            1461     1461       17     28C2       0
-                text99                             1257     1257        F     24AE       0
-                text98                             12B3     12B3       10     2566       0
-                text97                             1266     1266        F     24CC       0
-                text96                             12C3     12C3       10     2586       0
-                text95                             132A     132A       12     2654       0
-                text94                             1275     1275        F     24EA       0
-                text93                             14A8     14A8       18     2950       0
-                text92                             133C     133C       12     2678       0
-                text91                             1284     1284        F     2508       0
-                text90                             14C0     14C0       18     2980       0
-                text89                             1554     1554       1A     2AA8       0
+                text135                            1047     1047        1     208E       0
+                text134                            10A7     10A7        B     214E       0
+                text133                            1114     1114        F     2228       0
+                text132                            10C8     10C8        C     2190       0
+                text131                            13C4     13C4       13     2788       0
+                text130                            1583     1583       1C     2B06       0
+                text129                            1123     1123        F     2246       0
+                text128                            1132     1132        F     2264       0
+                text127                            1141     1141        F     2282       0
+                text126                            1150     1150        F     22A0       0
+                text125                            115F     115F        F     22BE       0
+                text124                            116E     116E        F     22DC       0
+                text123                            117D     117D        F     22FA       0
+                text122                            1414     1414       17     2828       0
+                text121                            118C     118C        F     2318       0
+                text120                            142B     142B       17     2856       0
+                text119                            119B     119B        F     2336       0
+                text118                            128B     128B       10     2516       0
+                text117                            11AA     11AA        F     2354       0
+                text116                            129B     129B       10     2536       0
+                text115                            12FE     12FE       12     25FC       0
+                text114                            11B9     11B9        F     2372       0
+                text113                            1470     1470       18     28E0       0
+                text112                            1310     1310       12     2620       0
+                text111                            11C8     11C8        F     2390       0
+                text110                            1488     1488       18     2910       0
+                text109                            11D7     11D7        F     23AE       0
+                text108                            11E6     11E6        F     23CC       0
+                text107                            11F5     11F5        F     23EA       0
+                text106                            1204     1204        F     2408       0
+                text105                            1213     1213        F     2426       0
+                text104                            1222     1222        F     2444       0
+                text103                            1231     1231        F     2462       0
+                text102                            1442     1442       17     2884       0
+                text101                            1240     1240        F     2480       0
+                text100                            1459     1459       17     28B2       0
+                text99                             124F     124F        F     249E       0
+                text98                             12AB     12AB       10     2556       0
+                text97                             125E     125E        F     24BC       0
+                text96                             12BB     12BB       10     2576       0
+                text95                             1322     1322       12     2644       0
+                text94                             126D     126D        F     24DA       0
+                text93                             14A0     14A0       18     2940       0
+                text92                             1334     1334       12     2668       0
+                text91                             127C     127C        F     24F8       0
+                text90                             14B8     14B8       18     2970       0
+                text89                             1534     1534       1A     2A68       0
                 text88                                2        2        2        0       0
-                text87                             15BF     15BF       1C     2B7E       0
+                text87                             159F     159F       1C     2B3E       0
                 text86                             17C8     17C8       38     2F90       0
                 text85                              9CC      9CC       6D     1398       0
-                text84                             14F0     14F0       19     29E0       0
-                text83                             10E8     10E8        D     21D0       0
-                text82                             16F9     16F9       25     2DF2       0
-                text81                             10F5     10F5        D     21EA       0
+                text84                             14D0     14D0       19     29A0       0
+                text83                             10E0     10E0        D     21C0       0
+                text82                             16F7     16F7       25     2DEE       0
+                text81                             10ED     10ED        D     21DA       0
                 text80                              784      784       7A        8       0
-                text79                             1050     1050        1     20A0       0
+                text79                             1048     1048        1     2090       0
                 text78                              3FA      3FA      1F1        8       0
-                text77                             10BA     10BA        B     2174       0
-                text76                             1063     1063        4     20C6       0
-                text74                             12D3     12D3       11     25A6       0
-                text73                             134E     134E       12     269C       0
-                text72                             1360     1360       12     26C0       0
+                text77                             10B2     10B2        B     2164       0
+                text76                             105B     105B        4     20B6       0
+                text74                             12CB     12CB       11     2596       0
+                text73                             1346     1346       12     268C       0
+                text72                             1358     1358       12     26B0       0
                 text71                              D85      D85       95     1B0A       0
-                text70                             1509     1509       19     2A12       0
+                text70                             14E9     14E9       19     29D2       0
                 text69                              845      845       3D     108A       0
-                text68                             1054     1054        3     20A8       0
+                text68                             104C     104C        3     2098       0
                 text67                              AA6      AA6       70     154C       0
                 text66                              B16      B16       72     162C       0
-                text65                             1091     1091        A     2122       0
+                text65                             1089     1089        A     2112       0
                 text64                              80B      80B       3A     1016       0
                 text63                              8C2      8C2       4E     1184       0
-                text62                             1102     1102        D     2204       0
+                text62                             10FA     10FA        D     21F4       0
                 text61                              5EB      5EB       D5        8       0
-                text60                             16B3     16B3       23     2D66       0
-                text59                             13F2     13F2       15     27E4       0
-                text58                             109B     109B        A     2136       0
-                text57                             10C5     10C5        B     218A       0
-                text56                             1372     1372       12     26E4       0
-                text55                             1384     1384       12     2708       0
-                text54                             12E4     12E4       11     25C8       0
-                text53                             1588     1588       1B     2B10       0
+                text60                             16B1     16B1       23     2D62       0
+                text59                             13EA     13EA       15     27D4       0
+                text58                             1093     1093        A     2126       0
+                text57                             10BD     10BD        B     217A       0
+                text56                             136A     136A       12     26D4       0
+                text55                             137C     137C       12     26F8       0
+                text54                             12DC     12DC       11     25B8       0
+                text53                             1568     1568       1B     2AD0       0
                 text52                              E1A      E1A       A0     1C34       0
-                text51                             162F     162F       20     2C5E       0
+                text51                             162D     162D       20     2C5A       0
                 text50                              A39      A39       6D     1472       0
-                text49                             15DB     15DB       1C     2BB6       0
+                text49                             15BB     15BB       1C     2B76       0
                 text48                              800      800        B     1000       0
-                text47                             1081     1081        8     2102       0
-                text46                             179C     179C       2C     2F38       0
-                text45                             110F     110F        D     221E       0
-                text44                             1057     1057        3     20AE       0
-                text43                             14D8     14D8       18     29B0       0
+                text47                             1079     1079        8     20F2       0
+                text46                             179A     179A       2E     2F34       0
+                text45                             1107     1107        D     220E       0
+                text44                             104F     104F        3     209E       0
+                text43                             160F     160F       1E     2C1E       0
                 text42                              B88      B88       73     1710       0
-                text41                             105A     105A        3     20B4       0
-                text40                             1396     1396       12     272C       0
+                text41                             1052     1052        3     20A4       0
+                text40                             138E     138E       12     271C       0
                 text39                              F5A      F5A       A6     1EB4       0
-                text38                             13DF     13DF       13     27BE       0
+                text38                             13D7     13D7       13     27AE       0
                 text37                              C74      C74       83     18E8       0
-                text36                             12F5     12F5       11     25EA       0
+                text36                             12ED     12ED       11     25DA       0
                 text35                              EBA      EBA       A0     1D74       0
                 text34                              CF7      CF7       8E     19EE       0
-                text33                             1747     1747       2A     2E8E       0
+                text33                             1745     1745       2A     2E8A       0
                 text32                              6C0      6C0       C4        8       0
                 text31                               5D       5D      39D        8       0
-                text30                             15F7     15F7       1C     2BEE       0
-                text29                             1051     1051        1     20A2       0
-                text28                             16D6     16D6       23     2DAC       0
-                text27                             1691     1691       22     2D22       0
-                text26                             1052     1052        1     20A4       0
-                text25                             1053     1053        1     20A6       0
-                text24                             171E     171E       29     2E3C       0
-                text23                             1613     1613       1C     2C26       0
-                text22                             164F     164F       21     2C9E       0
-                text21                             1670     1670       21     2CE0       0
-                text20                             105D     105D        3     20BA       0
-                text19                             1060     1060        3     20C0       0
-                text18                             106B     106B        5     20D6       0
-                text17                             1070     1070        5     20E0       0
-                text16                             1771     1771       2B     2EE2       0
+                text30                             15D7     15D7       1C     2BAE       0
+                text29                             1049     1049        1     2092       0
+                text28                             16D4     16D4       23     2DA8       0
+                text27                             168F     168F       22     2D1E       0
+                text26                             104A     104A        1     2094       0
+                text25                             104B     104B        1     2096       0
+                text24                             171C     171C       29     2E38       0
+                text23                             15F3     15F3       1C     2BE6       0
+                text22                             164D     164D       21     2C9A       0
+                text21                             166E     166E       21     2CDC       0
+                text20                             1055     1055        3     20AA       0
+                text19                             1058     1058        3     20B0       0
+                text18                             1063     1063        5     20C6       0
+                text17                             1068     1068        5     20D0       0
+                text16                             176F     176F       2B     2EDE       0
                 text15                              882      882       40     1104       0
                 text14                              BFB      BFB       79     17F6       0
-                text13                             13A8     13A8       12     2750       0
+                text13                             13A0     13A0       12     2740       0
                 text12                              910      910       56     1220       0
-                text11                             1075     1075        6     20EA       0
-                text10                             107B     107B        6     20F6       0
-                text9                              1522     1522       19     2A44       0
-                text8                              10A5     10A5        A     214A       0
-                text7                              1089     1089        8     2112       0
-                text6                              156E     156E       1A     2ADC       0
-                text5                              13BA     13BA       12     2774       0
-                text4                              1067     1067        4     20CE       0
-                text3                              1407     1407       15     280E       0
-                text2                              153B     153B       19     2A76       0
+                text11                             106D     106D        6     20DA       0
+                text10                             1073     1073        6     20E6       0
+                text9                              1502     1502       19     2A04       0
+                text8                              109D     109D        A     213A       0
+                text7                              1081     1081        8     2102       0
+                text6                              154E     154E       1A     2A9C       0
+                text5                              13B2     13B2       12     2764       0
+                text4                              105F     105F        4     20BE       0
+                text3                              13FF     13FF       15     27FE       0
+                text2                              151B     151B       19     2A36       0
                 text1                               7FE      7FE        2        8       0
                 maintext                            966      966       66     12CC       0
                 cstackBANK0                          20       20       2F       20       1
@@ -188,7 +188,7 @@ dist/default/production\AG_demo_Touch_Read2.X.production.o
                 cstackBANK1                          EF       EF        1       A0       1
                 cstackBANK2                         16E      16E        2      120       1
                 cstackBANK3                         1CE      1CE        1      1A0       1
-                clrtext                            10DC     10DC        C     21B8       0
+                clrtext                            10D4     10D4        C     21A8       0
                 bssBANK3                            1A0      1A0       2E      1A0       1
                 bssBANK2                            120      120       48      120       1
                 bssBANK1                             A0       A0       4F       A0       1
@@ -211,142 +211,142 @@ TOTAL           Name                               Link     Load   Length     Sp
                 cinit                                1E       1E       3F         0
                 intentry                              4        4       18         0
                 reset_vec                             0        0        2         0
-                text135                            104F     104F        1         0
-                text134                            10AF     10AF        B         0
-                text133                            111C     111C        F         0
-                text132                            10D0     10D0        C         0
-                text131                            13CC     13CC       13         0
-                text130                            15A3     15A3       1C         0
-                text129                            112B     112B        F         0
-                text128                            113A     113A        F         0
-                text127                            1149     1149        F         0
-                text126                            1158     1158        F         0
-                text125                            1167     1167        F         0
-                text124                            1176     1176        F         0
-                text123                            1185     1185        F         0
-                text122                            141C     141C       17         0
-                text121                            1194     1194        F         0
-                text120                            1433     1433       17         0
-                text119                            11A3     11A3        F         0
-                text118                            1293     1293       10         0
-                text117                            11B2     11B2        F         0
-                text116                            12A3     12A3       10         0
-                text115                            1306     1306       12         0
-                text114                            11C1     11C1        F         0
-                text113                            1478     1478       18         0
-                text112                            1318     1318       12         0
-                text111                            11D0     11D0        F         0
-                text110                            1490     1490       18         0
-                text109                            11DF     11DF        F         0
-                text108                            11EE     11EE        F         0
-                text107                            11FD     11FD        F         0
-                text106                            120C     120C        F         0
-                text105                            121B     121B        F         0
-                text104                            122A     122A        F         0
-                text103                            1239     1239        F         0
-                text102                            144A     144A       17         0
-                text101                            1248     1248        F         0
-                text100                            1461     1461       17         0
-                text99                             1257     1257        F         0
-                text98                             12B3     12B3       10         0
-                text97                             1266     1266        F         0
-                text96                             12C3     12C3       10         0
-                text95                             132A     132A       12         0
-                text94                             1275     1275        F         0
-                text93                             14A8     14A8       18         0
-                text92                             133C     133C       12         0
-                text91                             1284     1284        F         0
-                text90                             14C0     14C0       18         0
-                text89                             1554     1554       1A         0
+                text135                            1047     1047        1         0
+                text134                            10A7     10A7        B         0
+                text133                            1114     1114        F         0
+                text132                            10C8     10C8        C         0
+                text131                            13C4     13C4       13         0
+                text130                            1583     1583       1C         0
+                text129                            1123     1123        F         0
+                text128                            1132     1132        F         0
+                text127                            1141     1141        F         0
+                text126                            1150     1150        F         0
+                text125                            115F     115F        F         0
+                text124                            116E     116E        F         0
+                text123                            117D     117D        F         0
+                text122                            1414     1414       17         0
+                text121                            118C     118C        F         0
+                text120                            142B     142B       17         0
+                text119                            119B     119B        F         0
+                text118                            128B     128B       10         0
+                text117                            11AA     11AA        F         0
+                text116                            129B     129B       10         0
+                text115                            12FE     12FE       12         0
+                text114                            11B9     11B9        F         0
+                text113                            1470     1470       18         0
+                text112                            1310     1310       12         0
+                text111                            11C8     11C8        F         0
+                text110                            1488     1488       18         0
+                text109                            11D7     11D7        F         0
+                text108                            11E6     11E6        F         0
+                text107                            11F5     11F5        F         0
+                text106                            1204     1204        F         0
+                text105                            1213     1213        F         0
+                text104                            1222     1222        F         0
+                text103                            1231     1231        F         0
+                text102                            1442     1442       17         0
+                text101                            1240     1240        F         0
+                text100                            1459     1459       17         0
+                text99                             124F     124F        F         0
+                text98                             12AB     12AB       10         0
+                text97                             125E     125E        F         0
+                text96                             12BB     12BB       10         0
+                text95                             1322     1322       12         0
+                text94                             126D     126D        F         0
+                text93                             14A0     14A0       18         0
+                text92                             1334     1334       12         0
+                text91                             127C     127C        F         0
+                text90                             14B8     14B8       18         0
+                text89                             1534     1534       1A         0
                 text88                                2        2        2         0
-                text87                             15BF     15BF       1C         0
+                text87                             159F     159F       1C         0
                 text86                             17C8     17C8       38         0
                 text85                              9CC      9CC       6D         0
-                text84                             14F0     14F0       19         0
-                text83                             10E8     10E8        D         0
-                text82                             16F9     16F9       25         0
-                text81                             10F5     10F5        D         0
+                text84                             14D0     14D0       19         0
+                text83                             10E0     10E0        D         0
+                text82                             16F7     16F7       25         0
+                text81                             10ED     10ED        D         0
                 text80                              784      784       7A         0
-                text79                             1050     1050        1         0
+                text79                             1048     1048        1         0
                 text78                              3FA      3FA      1F1         0
-                text77                             10BA     10BA        B         0
-                text76                             1063     1063        4         0
-                text74                             12D3     12D3       11         0
-                text73                             134E     134E       12         0
-                text72                             1360     1360       12         0
+                text77                             10B2     10B2        B         0
+                text76                             105B     105B        4         0
+                text74                             12CB     12CB       11         0
+                text73                             1346     1346       12         0
+                text72                             1358     1358       12         0
                 text71                              D85      D85       95         0
-                text70                             1509     1509       19         0
+                text70                             14E9     14E9       19         0
                 text69                              845      845       3D         0
-                text68                             1054     1054        3         0
+                text68                             104C     104C        3         0
                 text67                              AA6      AA6       70         0
                 text66                              B16      B16       72         0
-                text65                             1091     1091        A         0
+                text65                             1089     1089        A         0
                 text64                              80B      80B       3A         0
                 text63                              8C2      8C2       4E         0
-                text62                             1102     1102        D         0
+                text62                             10FA     10FA        D         0
                 text61                              5EB      5EB       D5         0
-                text60                             16B3     16B3       23         0
-                text59                             13F2     13F2       15         0
-                text58                             109B     109B        A         0
-                text57                             10C5     10C5        B         0
-                text56                             1372     1372       12         0
-                text55                             1384     1384       12         0
-                text54                             12E4     12E4       11         0
-                text53                             1588     1588       1B         0
+                text60                             16B1     16B1       23         0
+                text59                             13EA     13EA       15         0
+                text58                             1093     1093        A         0
+                text57                             10BD     10BD        B         0
+                text56                             136A     136A       12         0
+                text55                             137C     137C       12         0
+                text54                             12DC     12DC       11         0
+                text53                             1568     1568       1B         0
                 text52                              E1A      E1A       A0         0
-                text51                             162F     162F       20         0
+                text51                             162D     162D       20         0
                 text50                              A39      A39       6D         0
-                text49                             15DB     15DB       1C         0
+                text49                             15BB     15BB       1C         0
                 text48                              800      800        B         0
-                text47                             1081     1081        8         0
-                text46                             179C     179C       2C         0
-                text45                             110F     110F        D         0
-                text44                             1057     1057        3         0
-                text43                             14D8     14D8       18         0
+                text47                             1079     1079        8         0
+                text46                             179A     179A       2E         0
+                text45                             1107     1107        D         0
+                text44                             104F     104F        3         0
+                text43                             160F     160F       1E         0
                 text42                              B88      B88       73         0
-                text41                             105A     105A        3         0
-                text40                             1396     1396       12         0
+                text41                             1052     1052        3         0
+                text40                             138E     138E       12         0
                 text39                              F5A      F5A       A6         0
-                text38                             13DF     13DF       13         0
+                text38                             13D7     13D7       13         0
                 text37                              C74      C74       83         0
-                text36                             12F5     12F5       11         0
+                text36                             12ED     12ED       11         0
                 text35                              EBA      EBA       A0         0
                 text34                              CF7      CF7       8E         0
-                text33                             1747     1747       2A         0
+                text33                             1745     1745       2A         0
                 text32                              6C0      6C0       C4         0
                 text31                               5D       5D      39D         0
-                text30                             15F7     15F7       1C         0
-                text29                             1051     1051        1         0
-                text28                             16D6     16D6       23         0
-                text27                             1691     1691       22         0
-                text26                             1052     1052        1         0
-                text25                             1053     1053        1         0
-                text24                             171E     171E       29         0
-                text23                             1613     1613       1C         0
-                text22                             164F     164F       21         0
-                text21                             1670     1670       21         0
-                text20                             105D     105D        3         0
-                text19                             1060     1060        3         0
-                text18                             106B     106B        5         0
-                text17                             1070     1070        5         0
-                text16                             1771     1771       2B         0
+                text30                             15D7     15D7       1C         0
+                text29                             1049     1049        1         0
+                text28                             16D4     16D4       23         0
+                text27                             168F     168F       22         0
+                text26                             104A     104A        1         0
+                text25                             104B     104B        1         0
+                text24                             171C     171C       29         0
+                text23                             15F3     15F3       1C         0
+                text22                             164D     164D       21         0
+                text21                             166E     166E       21         0
+                text20                             1055     1055        3         0
+                text19                             1058     1058        3         0
+                text18                             1063     1063        5         0
+                text17                             1068     1068        5         0
+                text16                             176F     176F       2B         0
                 text15                              882      882       40         0
                 text14                              BFB      BFB       79         0
-                text13                             13A8     13A8       12         0
+                text13                             13A0     13A0       12         0
                 text12                              910      910       56         0
-                text11                             1075     1075        6         0
-                text10                             107B     107B        6         0
-                text9                              1522     1522       19         0
-                text8                              10A5     10A5        A         0
-                text7                              1089     1089        8         0
-                text6                              156E     156E       1A         0
-                text5                              13BA     13BA       12         0
-                text4                              1067     1067        4         0
-                text3                              1407     1407       15         0
-                text2                              153B     153B       19         0
+                text11                             106D     106D        6         0
+                text10                             1073     1073        6         0
+                text9                              1502     1502       19         0
+                text8                              109D     109D        A         0
+                text7                              1081     1081        8         0
+                text6                              154E     154E       1A         0
+                text5                              13B2     13B2       12         0
+                text4                              105F     105F        4         0
+                text3                              13FF     13FF       15         0
+                text2                              151B     151B       19         0
                 text1                               7FE      7FE        2         0
                 maintext                            966      966       66         0
-                clrtext                            10DC     10DC        C         0
+                clrtext                            10D4     10D4        C         0
 
         CLASS   STRCODE        
                 stringtext7                        185A     185A        4         0
@@ -554,115 +554,115 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 text52                         000E1A  0000A0  000EBA      1C34       0  CODE        2
                 text35                         000EBA  0000A0  000F5A      1D74       0  CODE        2
                 text39                         000F5A  0000A6  001000      1EB4       0  CODE        2
-                text135                        00104F  000001  001050      209E       0  CODE        2
-                text79                         001050  000001  001051      20A0       0  CODE        2
-                text29                         001051  000001  001052      20A2       0  CODE        2
-                text26                         001052  000001  001053      20A4       0  CODE        2
-                text25                         001053  000001  001054      20A6       0  CODE        2
-                text68                         001054  000003  001057      20A8       0  CODE        2
-                text44                         001057  000003  00105A      20AE       0  CODE        2
-                text41                         00105A  000003  00105D      20B4       0  CODE        2
-                text20                         00105D  000003  001060      20BA       0  CODE        2
-                text19                         001060  000003  001063      20C0       0  CODE        2
-                text76                         001063  000004  001067      20C6       0  CODE        2
-                text4                          001067  000004  00106B      20CE       0  CODE        2
-                text18                         00106B  000005  001070      20D6       0  CODE        2
-                text17                         001070  000005  001075      20E0       0  CODE        2
-                text11                         001075  000006  00107B      20EA       0  CODE        2
-                text10                         00107B  000006  001081      20F6       0  CODE        2
-                text47                         001081  000008  001089      2102       0  CODE        2
-                text7                          001089  000008  001091      2112       0  CODE        2
-                text65                         001091  00000A  00109B      2122       0  CODE        2
-                text58                         00109B  00000A  0010A5      2136       0  CODE        2
-                text8                          0010A5  00000A  0010AF      214A       0  CODE        2
-                text134                        0010AF  00000B  0010BA      215E       0  CODE        2
-                text77                         0010BA  00000B  0010C5      2174       0  CODE        2
-                text57                         0010C5  00000B  0010D0      218A       0  CODE        2
-                text132                        0010D0  00000C  0010DC      21A0       0  CODE        2
-                clrtext                        0010DC  00000C  0010E8      21B8       0  CODE        2
-                text83                         0010E8  00000D  0010F5      21D0       0  CODE        2
-                text81                         0010F5  00000D  001102      21EA       0  CODE        2
-                text62                         001102  00000D  00110F      2204       0  CODE        2
-                text45                         00110F  00000D  00111C      221E       0  CODE        2
-                text133                        00111C  00000F  00112B      2238       0  CODE        2
-                text129                        00112B  00000F  00113A      2256       0  CODE        2
-                text128                        00113A  00000F  001149      2274       0  CODE        2
-                text127                        001149  00000F  001158      2292       0  CODE        2
-                text126                        001158  00000F  001167      22B0       0  CODE        2
-                text125                        001167  00000F  001176      22CE       0  CODE        2
-                text124                        001176  00000F  001185      22EC       0  CODE        2
-                text123                        001185  00000F  001194      230A       0  CODE        2
-                text121                        001194  00000F  0011A3      2328       0  CODE        2
-                text119                        0011A3  00000F  0011B2      2346       0  CODE        2
-                text117                        0011B2  00000F  0011C1      2364       0  CODE        2
-                text114                        0011C1  00000F  0011D0      2382       0  CODE        2
-                text111                        0011D0  00000F  0011DF      23A0       0  CODE        2
-                text109                        0011DF  00000F  0011EE      23BE       0  CODE        2
-                text108                        0011EE  00000F  0011FD      23DC       0  CODE        2
-                text107                        0011FD  00000F  00120C      23FA       0  CODE        2
-                text106                        00120C  00000F  00121B      2418       0  CODE        2
-                text105                        00121B  00000F  00122A      2436       0  CODE        2
-                text104                        00122A  00000F  001239      2454       0  CODE        2
-                text103                        001239  00000F  001248      2472       0  CODE        2
-                text101                        001248  00000F  001257      2490       0  CODE        2
-                text99                         001257  00000F  001266      24AE       0  CODE        2
-                text97                         001266  00000F  001275      24CC       0  CODE        2
-                text94                         001275  00000F  001284      24EA       0  CODE        2
-                text91                         001284  00000F  001293      2508       0  CODE        2
-                text118                        001293  000010  0012A3      2526       0  CODE        2
-                text116                        0012A3  000010  0012B3      2546       0  CODE        2
-                text98                         0012B3  000010  0012C3      2566       0  CODE        2
-                text96                         0012C3  000010  0012D3      2586       0  CODE        2
-                text74                         0012D3  000011  0012E4      25A6       0  CODE        2
-                text54                         0012E4  000011  0012F5      25C8       0  CODE        2
-                text36                         0012F5  000011  001306      25EA       0  CODE        2
-                text115                        001306  000012  001318      260C       0  CODE        2
-                text112                        001318  000012  00132A      2630       0  CODE        2
-                text95                         00132A  000012  00133C      2654       0  CODE        2
-                text92                         00133C  000012  00134E      2678       0  CODE        2
-                text73                         00134E  000012  001360      269C       0  CODE        2
-                text72                         001360  000012  001372      26C0       0  CODE        2
-                text56                         001372  000012  001384      26E4       0  CODE        2
-                text55                         001384  000012  001396      2708       0  CODE        2
-                text40                         001396  000012  0013A8      272C       0  CODE        2
-                text13                         0013A8  000012  0013BA      2750       0  CODE        2
-                text5                          0013BA  000012  0013CC      2774       0  CODE        2
-                text131                        0013CC  000013  0013DF      2798       0  CODE        2
-                text38                         0013DF  000013  0013F2      27BE       0  CODE        2
-                text59                         0013F2  000015  001407      27E4       0  CODE        2
-                text3                          001407  000015  00141C      280E       0  CODE        2
-                text122                        00141C  000017  001433      2838       0  CODE        2
-                text120                        001433  000017  00144A      2866       0  CODE        2
-                text102                        00144A  000017  001461      2894       0  CODE        2
-                text100                        001461  000017  001478      28C2       0  CODE        2
-                text113                        001478  000018  001490      28F0       0  CODE        2
-                text110                        001490  000018  0014A8      2920       0  CODE        2
-                text93                         0014A8  000018  0014C0      2950       0  CODE        2
-                text90                         0014C0  000018  0014D8      2980       0  CODE        2
-                text43                         0014D8  000018  0014F0      29B0       0  CODE        2
-                text84                         0014F0  000019  001509      29E0       0  CODE        2
-                text70                         001509  000019  001522      2A12       0  CODE        2
-                text9                          001522  000019  00153B      2A44       0  CODE        2
-                text2                          00153B  000019  001554      2A76       0  CODE        2
-                text89                         001554  00001A  00156E      2AA8       0  CODE        2
-                text6                          00156E  00001A  001588      2ADC       0  CODE        2
-                text53                         001588  00001B  0015A3      2B10       0  CODE        2
-                text130                        0015A3  00001C  0015BF      2B46       0  CODE        2
-                text87                         0015BF  00001C  0015DB      2B7E       0  CODE        2
-                text49                         0015DB  00001C  0015F7      2BB6       0  CODE        2
-                text30                         0015F7  00001C  001613      2BEE       0  CODE        2
-                text23                         001613  00001C  00162F      2C26       0  CODE        2
-                text51                         00162F  000020  00164F      2C5E       0  CODE        2
-                text22                         00164F  000021  001670      2C9E       0  CODE        2
-                text21                         001670  000021  001691      2CE0       0  CODE        2
-                text27                         001691  000022  0016B3      2D22       0  CODE        2
-                text60                         0016B3  000023  0016D6      2D66       0  CODE        2
-                text28                         0016D6  000023  0016F9      2DAC       0  CODE        2
-                text82                         0016F9  000025  00171E      2DF2       0  CODE        2
-                text24                         00171E  000029  001747      2E3C       0  CODE        2
-                text33                         001747  00002A  001771      2E8E       0  CODE        2
-                text16                         001771  00002B  00179C      2EE2       0  CODE        2
-                text46                         00179C  00002C  0017C8      2F38       0  CODE        2
+                text135                        001047  000001  001048      208E       0  CODE        2
+                text79                         001048  000001  001049      2090       0  CODE        2
+                text29                         001049  000001  00104A      2092       0  CODE        2
+                text26                         00104A  000001  00104B      2094       0  CODE        2
+                text25                         00104B  000001  00104C      2096       0  CODE        2
+                text68                         00104C  000003  00104F      2098       0  CODE        2
+                text44                         00104F  000003  001052      209E       0  CODE        2
+                text41                         001052  000003  001055      20A4       0  CODE        2
+                text20                         001055  000003  001058      20AA       0  CODE        2
+                text19                         001058  000003  00105B      20B0       0  CODE        2
+                text76                         00105B  000004  00105F      20B6       0  CODE        2
+                text4                          00105F  000004  001063      20BE       0  CODE        2
+                text18                         001063  000005  001068      20C6       0  CODE        2
+                text17                         001068  000005  00106D      20D0       0  CODE        2
+                text11                         00106D  000006  001073      20DA       0  CODE        2
+                text10                         001073  000006  001079      20E6       0  CODE        2
+                text47                         001079  000008  001081      20F2       0  CODE        2
+                text7                          001081  000008  001089      2102       0  CODE        2
+                text65                         001089  00000A  001093      2112       0  CODE        2
+                text58                         001093  00000A  00109D      2126       0  CODE        2
+                text8                          00109D  00000A  0010A7      213A       0  CODE        2
+                text134                        0010A7  00000B  0010B2      214E       0  CODE        2
+                text77                         0010B2  00000B  0010BD      2164       0  CODE        2
+                text57                         0010BD  00000B  0010C8      217A       0  CODE        2
+                text132                        0010C8  00000C  0010D4      2190       0  CODE        2
+                clrtext                        0010D4  00000C  0010E0      21A8       0  CODE        2
+                text83                         0010E0  00000D  0010ED      21C0       0  CODE        2
+                text81                         0010ED  00000D  0010FA      21DA       0  CODE        2
+                text62                         0010FA  00000D  001107      21F4       0  CODE        2
+                text45                         001107  00000D  001114      220E       0  CODE        2
+                text133                        001114  00000F  001123      2228       0  CODE        2
+                text129                        001123  00000F  001132      2246       0  CODE        2
+                text128                        001132  00000F  001141      2264       0  CODE        2
+                text127                        001141  00000F  001150      2282       0  CODE        2
+                text126                        001150  00000F  00115F      22A0       0  CODE        2
+                text125                        00115F  00000F  00116E      22BE       0  CODE        2
+                text124                        00116E  00000F  00117D      22DC       0  CODE        2
+                text123                        00117D  00000F  00118C      22FA       0  CODE        2
+                text121                        00118C  00000F  00119B      2318       0  CODE        2
+                text119                        00119B  00000F  0011AA      2336       0  CODE        2
+                text117                        0011AA  00000F  0011B9      2354       0  CODE        2
+                text114                        0011B9  00000F  0011C8      2372       0  CODE        2
+                text111                        0011C8  00000F  0011D7      2390       0  CODE        2
+                text109                        0011D7  00000F  0011E6      23AE       0  CODE        2
+                text108                        0011E6  00000F  0011F5      23CC       0  CODE        2
+                text107                        0011F5  00000F  001204      23EA       0  CODE        2
+                text106                        001204  00000F  001213      2408       0  CODE        2
+                text105                        001213  00000F  001222      2426       0  CODE        2
+                text104                        001222  00000F  001231      2444       0  CODE        2
+                text103                        001231  00000F  001240      2462       0  CODE        2
+                text101                        001240  00000F  00124F      2480       0  CODE        2
+                text99                         00124F  00000F  00125E      249E       0  CODE        2
+                text97                         00125E  00000F  00126D      24BC       0  CODE        2
+                text94                         00126D  00000F  00127C      24DA       0  CODE        2
+                text91                         00127C  00000F  00128B      24F8       0  CODE        2
+                text118                        00128B  000010  00129B      2516       0  CODE        2
+                text116                        00129B  000010  0012AB      2536       0  CODE        2
+                text98                         0012AB  000010  0012BB      2556       0  CODE        2
+                text96                         0012BB  000010  0012CB      2576       0  CODE        2
+                text74                         0012CB  000011  0012DC      2596       0  CODE        2
+                text54                         0012DC  000011  0012ED      25B8       0  CODE        2
+                text36                         0012ED  000011  0012FE      25DA       0  CODE        2
+                text115                        0012FE  000012  001310      25FC       0  CODE        2
+                text112                        001310  000012  001322      2620       0  CODE        2
+                text95                         001322  000012  001334      2644       0  CODE        2
+                text92                         001334  000012  001346      2668       0  CODE        2
+                text73                         001346  000012  001358      268C       0  CODE        2
+                text72                         001358  000012  00136A      26B0       0  CODE        2
+                text56                         00136A  000012  00137C      26D4       0  CODE        2
+                text55                         00137C  000012  00138E      26F8       0  CODE        2
+                text40                         00138E  000012  0013A0      271C       0  CODE        2
+                text13                         0013A0  000012  0013B2      2740       0  CODE        2
+                text5                          0013B2  000012  0013C4      2764       0  CODE        2
+                text131                        0013C4  000013  0013D7      2788       0  CODE        2
+                text38                         0013D7  000013  0013EA      27AE       0  CODE        2
+                text59                         0013EA  000015  0013FF      27D4       0  CODE        2
+                text3                          0013FF  000015  001414      27FE       0  CODE        2
+                text122                        001414  000017  00142B      2828       0  CODE        2
+                text120                        00142B  000017  001442      2856       0  CODE        2
+                text102                        001442  000017  001459      2884       0  CODE        2
+                text100                        001459  000017  001470      28B2       0  CODE        2
+                text113                        001470  000018  001488      28E0       0  CODE        2
+                text110                        001488  000018  0014A0      2910       0  CODE        2
+                text93                         0014A0  000018  0014B8      2940       0  CODE        2
+                text90                         0014B8  000018  0014D0      2970       0  CODE        2
+                text84                         0014D0  000019  0014E9      29A0       0  CODE        2
+                text70                         0014E9  000019  001502      29D2       0  CODE        2
+                text9                          001502  000019  00151B      2A04       0  CODE        2
+                text2                          00151B  000019  001534      2A36       0  CODE        2
+                text89                         001534  00001A  00154E      2A68       0  CODE        2
+                text6                          00154E  00001A  001568      2A9C       0  CODE        2
+                text53                         001568  00001B  001583      2AD0       0  CODE        2
+                text130                        001583  00001C  00159F      2B06       0  CODE        2
+                text87                         00159F  00001C  0015BB      2B3E       0  CODE        2
+                text49                         0015BB  00001C  0015D7      2B76       0  CODE        2
+                text30                         0015D7  00001C  0015F3      2BAE       0  CODE        2
+                text23                         0015F3  00001C  00160F      2BE6       0  CODE        2
+                text43                         00160F  00001E  00162D      2C1E       0  CODE        2
+                text51                         00162D  000020  00164D      2C5A       0  CODE        2
+                text22                         00164D  000021  00166E      2C9A       0  CODE        2
+                text21                         00166E  000021  00168F      2CDC       0  CODE        2
+                text27                         00168F  000022  0016B1      2D1E       0  CODE        2
+                text60                         0016B1  000023  0016D4      2D62       0  CODE        2
+                text28                         0016D4  000023  0016F7      2DA8       0  CODE        2
+                text82                         0016F7  000025  00171C      2DEE       0  CODE        2
+                text24                         00171C  000029  001745      2E38       0  CODE        2
+                text33                         001745  00002A  00176F      2E8A       0  CODE        2
+                text16                         00176F  00002B  00179A      2EDE       0  CODE        2
+                text46                         00179A  00002E  0017C8      2F34       0  CODE        2
                 text86                         0017C8  000038  001800      2F90       0  CODE        2
                 stringtext1                    001800  00005E  00185E      3000       0  STRCODE     2
 
@@ -672,12 +672,12 @@ UNUSED ADDRESS RANGES
         Name                Unused          Largest block    Delta
         BANK3            001CF-001E7              19           1
         BIGRAM           02000-021EF             1F0           1
-        CODE             01000-0104E              4F           2
+        CODE             01000-01046              47           2
                          0185E-01FFF             7A2
         COMMON           0007A-0007D               4           1
-        CONST            01000-0104E              4F           2
+        CONST            01000-01046              47           2
                          0185E-01FFF             100
-        ENTRY            01000-0104E              4F           2
+        ENTRY            01000-01046              47           2
                          0185E-01FFF             100
         IDLOC            08000-08003               4           2
         RAM              001CF-001E7              19           1
@@ -714,9 +714,9 @@ UNUSED ADDRESS RANGES
         SFR8             00400-0046F              70           1
         SFR9             00480-004EF              70           1
         STACK            0211F-02137              19           1
-        STRCODE          01000-0104E              4F           2
+        STRCODE          01000-01046              47           2
                          0185E-01FFF             7A2
-        STRING           01000-0104E              4F           2
+        STRING           01000-01046              47           2
                          0185E-01FFF             100
 
                                   Symbol Table
@@ -804,7 +804,7 @@ _ANSELA                                           (abs)        0018C
 _ANSELB                                           (abs)        0018D
 _ANSELC                                           (abs)        0018E
 _APFCON                                           (abs)        0011D
-_ActivateHandPosition                             text40       01396
+_ActivateHandPosition                             text40       0138E
 _AfterDetectedLoadPosition                        text31       0005D
 _BORCON                                           (abs)        00116
 _CM1CON0                                          (abs)        00111
@@ -812,130 +812,130 @@ _CM1CON1                                          (abs)        00112
 _CM2CON0                                          (abs)        00113
 _CM2CON1                                          (abs)        00114
 _CalcMotorStepCounter                             text61       005EB
-_ComparatorOff                                    text131      013CC
-_ComparatorOn                                     text130      015A3
+_ComparatorOff                                    text131      013C4
+_ComparatorOn                                     text130      01583
 _CorrectPosition                                  text64       0080B
 _DACCON0                                          (abs)        00118
 _DACCON1                                          (abs)        00119
-_DAC_Initialize                                   text11       01075
-_DeactivateHandPosition                           text55       01384
+_DAC_Initialize                                   text11       0106D
+_DeactivateHandPosition                           text55       0137C
 _DetermineBasePosition                            text39       00F5A
-_ExcitatingOutOff                                 text83       010E8
-_ExcitatingOutOn                                  text82       016F9
-_GetIsMotorActive                                 text59       013F2
+_ExcitatingOutOff                                 text83       010E0
+_ExcitatingOutOn                                  text82       016F7
+_GetIsMotorActive                                 text59       013EA
 _INTCONbits                                       (abs)        0000B
 _INTERRUPT_InterruptManager                       intentry     00004
 _InitPositionSearch                               text52       00E1A
-_InitPulsePositionTable                           text74       012D3
+_InitPulsePositionTable                           text74       012CB
 _LATA                                             (abs)        0010C
 _LATB                                             (abs)        0010D
 _LATC                                             (abs)        0010E
 _LATC0                                            (abs)        00870
-_MoveTargetPosition                               text38       013DF
+_MoveTargetPosition                               text38       013D7
 _OPTION_REGbits                                   (abs)        00095
 _OSCCON                                           (abs)        00099
-_OSCILLATOR_Initialize                            text10       0107B
+_OSCILLATOR_Initialize                            text10       01073
 _OutRequestFlug                                   bssBANK1     000D6
 _OutTrisRequestFlug                               bssBANK1     000D5
 _PIE1bits                                         (abs)        00091
-_PIN_MANAGER_Initialize                           text9        01522
+_PIN_MANAGER_Initialize                           text9        01502
 _PIR1bits                                         (abs)        00011
 _PIR2bits                                         (abs)        00012
 _PR2                                              (abs)        0001B
 _PriorUpdateCorrentPosition                       text63       008C2
 _SPIControl_ExecuteCommand                        text42       00B88
-_SPIControl_RecieveComannd                        text13       013A8
-_SPIControl_SetNotification                       text30       015F7
-_SPI_Initialize                                   text8        010A5
+_SPIControl_RecieveComannd                        text13       013A0
+_SPIControl_SetNotification                       text30       015D7
+_SPI_Initialize                                   text8        0109D
 _SPI_Open                                         text12       00910
-_SPI_ReadByte                                     text41       0105A
+_SPI_ReadByte                                     text41       01052
 _SSP1ADD                                          (abs)        00212
 _SSP1BUF                                          (abs)        00211
 _SSP1CON1                                         (abs)        00215
 _SSP1CON1bits                                     (abs)        00215
 _SSP1CON2                                         (abs)        00216
 _SSP1STAT                                         (abs)        00214
-_SYSTEM_Initialize                                text3        01407
+_SYSTEM_Initialize                                text3        013FF
 _SaveLoadPosition                                 text37       00C74
-_SetAfterDetectLoadFunc                           text57       010C5
-_SetAfterMotorStopFunc                            text58       0109B
-_SetDataTRISxWork_M0_SPK_POL0_OPEN                text114      011C1
-_SetDataTRISxWork_M0_SPK_POL0_SHORT               text113      01478
-_SetDataTRISxWork_M0_SPK_POL1_OPEN                text111      011D0
-_SetDataTRISxWork_M0_SPK_POL1_SHORT               text110      01490
-_SetDataTRISxWork_M1_SPK_POL0_OPEN                text94       01275
-_SetDataTRISxWork_M1_SPK_POL0_SHORT               text93       014A8
-_SetDataTRISxWork_M1_SPK_POL1_OPEN                text91       01284
-_SetDataTRISxWork_M1_SPK_POL1_SHORT               text90       014C0
+_SetAfterDetectLoadFunc                           text57       010BD
+_SetAfterMotorStopFunc                            text58       01093
+_SetDataTRISxWork_M0_SPK_POL0_OPEN                text114      011B9
+_SetDataTRISxWork_M0_SPK_POL0_SHORT               text113      01470
+_SetDataTRISxWork_M0_SPK_POL1_OPEN                text111      011C8
+_SetDataTRISxWork_M0_SPK_POL1_SHORT               text110      01488
+_SetDataTRISxWork_M1_SPK_POL0_OPEN                text94       0126D
+_SetDataTRISxWork_M1_SPK_POL0_SHORT               text93       014A0
+_SetDataTRISxWork_M1_SPK_POL1_OPEN                text91       0127C
+_SetDataTRISxWork_M1_SPK_POL1_SHORT               text90       014B8
 _SetDataTRISxWork_SPK_OPEN                        text86       017C8
-_SetDataTRISxWork_SPK_SHORT                       text87       015BF
+_SetDataTRISxWork_SPK_SHORT                       text87       0159F
 _SetDriveType                                     text71       00D85
-_SetExcitatingOutOffData                          text49       015DB
+_SetExcitatingOutOffData                          text49       015BB
 _SetFwdPulseWithCorrectProc                       text15       00882
-_SetMotorAddShakePulse                            text2        0153B
-_SetMotorBitMotorNo                               text36       012F5
-_SetMotorCorrectPositionStart                     text33       01747
-_SetMotorDirection                                text70       01509
-_SetMotorDisableExcitating                        text73       0134E
-_SetMotorEnableExcitating                         text72       01360
+_SetMotorAddShakePulse                            text2        0151B
+_SetMotorBitMotorNo                               text36       012ED
+_SetMotorCorrectPositionStart                     text33       01745
+_SetMotorDirection                                text70       014E9
+_SetMotorDisableExcitating                        text73       01346
+_SetMotorEnableExcitating                         text72       01358
 _SetMotorFrequency                                text69       00845
-_SetMotorPositionSearchStart                      text51       0162F
-_SetMotorStart                                    text65       01091
-_SetMotorStartSPK                                 text46       0179C
-_SetMotorStepCounter                              text62       01102
-_SetMotorStop                                     text56       01372
-_SetMotorStopSPK                                  text43       014D8
+_SetMotorPositionSearchStart                      text51       0162D
+_SetMotorStart                                    text65       01089
+_SetMotorStartSPK                                 text46       0179A
+_SetMotorStepCounter                              text62       010FA
+_SetMotorStop                                     text56       0136A
+_SetMotorStopSPK                                  text43       0160F
 _SetOutPutLATX                                    text50       00A39
-_SetPulseOutLATxWork_M0_FWD_POL0_OFF              text122      0141C
-_SetPulseOutLATxWork_M0_FWD_POL0_P1               text126      01158
-_SetPulseOutLATxWork_M0_FWD_POL0_P2               text123      01185
-_SetPulseOutLATxWork_M0_FWD_POL1_OFF              text120      01433
-_SetPulseOutLATxWork_M0_FWD_POL1_P1               text127      01149
-_SetPulseOutLATxWork_M0_FWD_POL1_P2               text121      01194
-_SetPulseOutLATxWork_M0_REV_POL0_OFF              text118      01293
-_SetPulseOutLATxWork_M0_REV_POL0_P1               text124      01176
-_SetPulseOutLATxWork_M0_REV_POL0_P2               text119      011A3
-_SetPulseOutLATxWork_M0_REV_POL1_OFF              text116      012A3
-_SetPulseOutLATxWork_M0_REV_POL1_P1               text125      01167
-_SetPulseOutLATxWork_M0_REV_POL1_P2               text117      011B2
-_SetPulseOutLATxWork_M0_SHAKE_POL0_OFF            text115      01306
-_SetPulseOutLATxWork_M0_SHAKE_POL0_P0             text128      0113A
-_SetPulseOutLATxWork_M0_SHAKE_POL1_OFF            text112      01318
-_SetPulseOutLATxWork_M0_SHAKE_POL1_P0             text129      0112B
-_SetPulseOutLATxWork_M1_FWD_POL0_OFF              text102      0144A
-_SetPulseOutLATxWork_M1_FWD_POL0_P1               text106      0120C
-_SetPulseOutLATxWork_M1_FWD_POL0_P2               text103      01239
-_SetPulseOutLATxWork_M1_FWD_POL1_OFF              text100      01461
-_SetPulseOutLATxWork_M1_FWD_POL1_P1               text107      011FD
-_SetPulseOutLATxWork_M1_FWD_POL1_P2               text101      01248
-_SetPulseOutLATxWork_M1_REV_POL0_OFF              text98       012B3
-_SetPulseOutLATxWork_M1_REV_POL0_P1               text104      0122A
-_SetPulseOutLATxWork_M1_REV_POL0_P2               text99       01257
-_SetPulseOutLATxWork_M1_REV_POL1_OFF              text96       012C3
-_SetPulseOutLATxWork_M1_REV_POL1_P1               text105      0121B
-_SetPulseOutLATxWork_M1_REV_POL1_P2               text97       01266
-_SetPulseOutLATxWork_M1_SHAKE_POL0_OFF            text95       0132A
-_SetPulseOutLATxWork_M1_SHAKE_POL0_P0             text108      011EE
-_SetPulseOutLATxWork_M1_SHAKE_POL1_OFF            text92       0133C
-_SetPulseOutLATxWork_M1_SHAKE_POL1_P0             text109      011DF
-_SpiCmdFunc_DisableExcitating                     text17       01070
-_SpiCmdFunc_EnableExcitating                      text18       0106B
-_SpiCmdFunc_FwdPulseNormal                        text28       016D6
-_SpiCmdFunc_FwdPulsePositionCtl                   text22       0164F
-_SpiCmdFunc_FwdPulseWithCorrect                   text23       01613
-_SpiCmdFunc_FwdPulseWithShake                     text26       01052
-_SpiCmdFunc_RevPulseNormal                        text27       01691
-_SpiCmdFunc_RevPulsePositionCtl                   text21       01670
-_SpiCmdFunc_Search1008Position                    text16       01771
-_SpiCmdFunc_SearchBasePosition                    text24       0171E
-_SpiCmdFunc_SearchLoadPosition                    text25       01053
-_SpiCmdFunc_StartDetectVrs                        text20       0105D
-_SpiCmdFunc_StopDetectVrs                         text19       01060
-_SpiCmdFunc_Test                                  text29       01051
+_SetPulseOutLATxWork_M0_FWD_POL0_OFF              text122      01414
+_SetPulseOutLATxWork_M0_FWD_POL0_P1               text126      01150
+_SetPulseOutLATxWork_M0_FWD_POL0_P2               text123      0117D
+_SetPulseOutLATxWork_M0_FWD_POL1_OFF              text120      0142B
+_SetPulseOutLATxWork_M0_FWD_POL1_P1               text127      01141
+_SetPulseOutLATxWork_M0_FWD_POL1_P2               text121      0118C
+_SetPulseOutLATxWork_M0_REV_POL0_OFF              text118      0128B
+_SetPulseOutLATxWork_M0_REV_POL0_P1               text124      0116E
+_SetPulseOutLATxWork_M0_REV_POL0_P2               text119      0119B
+_SetPulseOutLATxWork_M0_REV_POL1_OFF              text116      0129B
+_SetPulseOutLATxWork_M0_REV_POL1_P1               text125      0115F
+_SetPulseOutLATxWork_M0_REV_POL1_P2               text117      011AA
+_SetPulseOutLATxWork_M0_SHAKE_POL0_OFF            text115      012FE
+_SetPulseOutLATxWork_M0_SHAKE_POL0_P0             text128      01132
+_SetPulseOutLATxWork_M0_SHAKE_POL1_OFF            text112      01310
+_SetPulseOutLATxWork_M0_SHAKE_POL1_P0             text129      01123
+_SetPulseOutLATxWork_M1_FWD_POL0_OFF              text102      01442
+_SetPulseOutLATxWork_M1_FWD_POL0_P1               text106      01204
+_SetPulseOutLATxWork_M1_FWD_POL0_P2               text103      01231
+_SetPulseOutLATxWork_M1_FWD_POL1_OFF              text100      01459
+_SetPulseOutLATxWork_M1_FWD_POL1_P1               text107      011F5
+_SetPulseOutLATxWork_M1_FWD_POL1_P2               text101      01240
+_SetPulseOutLATxWork_M1_REV_POL0_OFF              text98       012AB
+_SetPulseOutLATxWork_M1_REV_POL0_P1               text104      01222
+_SetPulseOutLATxWork_M1_REV_POL0_P2               text99       0124F
+_SetPulseOutLATxWork_M1_REV_POL1_OFF              text96       012BB
+_SetPulseOutLATxWork_M1_REV_POL1_P1               text105      01213
+_SetPulseOutLATxWork_M1_REV_POL1_P2               text97       0125E
+_SetPulseOutLATxWork_M1_SHAKE_POL0_OFF            text95       01322
+_SetPulseOutLATxWork_M1_SHAKE_POL0_P0             text108      011E6
+_SetPulseOutLATxWork_M1_SHAKE_POL1_OFF            text92       01334
+_SetPulseOutLATxWork_M1_SHAKE_POL1_P0             text109      011D7
+_SpiCmdFunc_DisableExcitating                     text17       01068
+_SpiCmdFunc_EnableExcitating                      text18       01063
+_SpiCmdFunc_FwdPulseNormal                        text28       016D4
+_SpiCmdFunc_FwdPulsePositionCtl                   text22       0164D
+_SpiCmdFunc_FwdPulseWithCorrect                   text23       015F3
+_SpiCmdFunc_FwdPulseWithShake                     text26       0104A
+_SpiCmdFunc_RevPulseNormal                        text27       0168F
+_SpiCmdFunc_RevPulsePositionCtl                   text21       0166E
+_SpiCmdFunc_Search1008Position                    text16       0176F
+_SpiCmdFunc_SearchBasePosition                    text24       0171C
+_SpiCmdFunc_SearchLoadPosition                    text25       0104B
+_SpiCmdFunc_StartDetectVrs                        text20       01055
+_SpiCmdFunc_StopDetectVrs                         text19       01058
+_SpiCmdFunc_Test                                  text29       01049
 _SpiCmmandFunction                                stringtext1  01800
-_SpkComparatorOff                                 text45       0110F
+_SpkComparatorOff                                 text45       01107
 _SpkComparatorOn                                  text48       00800
-_SpkVrsCheck                                      text81       010F5
+_SpkVrsCheck                                      text81       010ED
 _StartPulseOutM0                                  text67       00AA6
 _StartPulseOutM1                                  text66       00B16
 _T1CON                                            (abs)        00018
@@ -945,25 +945,25 @@ _T2CON                                            (abs)        0001C
 _T2CONbits                                        (abs)        0001C
 _TMR1H                                            (abs)        00017
 _TMR1L                                            (abs)        00016
-_TMR1_CallBack                                    text134      010AF
-_TMR1_DefaultInterruptHandler                     text135      0104F
-_TMR1_ISR                                         text132      010D0
-_TMR1_Initialize                                  text6        0156E
+_TMR1_CallBack                                    text134      010A7
+_TMR1_DefaultInterruptHandler                     text135      01047
+_TMR1_ISR                                         text132      010C8
+_TMR1_Initialize                                  text6        0154E
 _TMR1_InterruptHandler                            nvBANK2      00168
-_TMR1_SetInterruptHandler                         text7        01089
+_TMR1_SetInterruptHandler                         text7        01081
 _TMR1_StopTimer                                   text1        007FE
-_TMR1_WriteTimer                                  text133      0111C
+_TMR1_WriteTimer                                  text133      01114
 _TMR2                                             (abs)        0001A
-_TMR2_CallBack                                    text77       010BA
-_TMR2_DefaultInterruptHandler                     text79       01050
-_TMR2_ISR                                         text76       01063
-_TMR2_Initialize                                  text5        013BA
+_TMR2_CallBack                                    text77       010B2
+_TMR2_DefaultInterruptHandler                     text79       01048
+_TMR2_ISR                                         text76       0105B
+_TMR2_Initialize                                  text5        013B2
 _TMR2_Interrupt                                   text78       003FA
 _TMR2_InterruptHandler                            nvBANK2      0016C
 _TMR2_Interrupt_SPK                               text80       00784
-_TMR2_SetInterruptHandler                         text47       01081
-_TMR2_StartTimer                                  text68       01054
-_TMR2_StopTimer                                   text44       01057
+_TMR2_SetInterruptHandler                         text47       01079
+_TMR2_StartTimer                                  text68       0104C
+_TMR2_StopTimer                                   text44       0104F
 _TRISA                                            (abs)        0008C
 _TRISB                                            (abs)        0008D
 _TRISBbits                                        (abs)        0008D
@@ -976,11 +976,11 @@ _TblMaxSearchSteps                                stringtext5  01852
 _TblMaxSteps                                      stringtext6  01856
 _UpdataHandPosition                               text35       00EBA
 _UpdateCurrentPositionByFinePosition              text34       00CF7
-_UpdateTargetPosition                             text60       016B3
+_UpdateTargetPosition                             text60       016B1
 _VerifyHandPosition_LoadPosition                  text32       006C0
-_VrsCheck                                         text89       01554
+_VrsCheck                                         text89       01534
 _WDTCON                                           (abs)        00097
-_WDT_Initialize                                   text4        01067
+_WDT_Initialize                                   text4        0105F
 _WPUA                                             (abs)        0020C
 _WPUB                                             (abs)        0020D
 _WatchMotorDriveFinish                            text14       00BFB
@@ -1199,7 +1199,7 @@ __Ltext                                           text         00000
 __S0                                              (abs)        0185E
 __S1                                              (abs)        001CF
 __S2                                              (abs)        00000
-___bmul                                           text54       012E4
+___bmul                                           text54       012DC
 ___bmul@multiplicand                              cstackBANK0  00020
 ___bmul@multiplier                                cstackBANK0  00023
 ___bmul@product                                   cstackBANK0  00022
@@ -1208,152 +1208,152 @@ ___latbits                                        (abs)        00002
 ___sp                                             stack        00000
 ___stackhi                                        (abs)        02137
 ___stacklo                                        (abs)        0211F
-___wmul                                           text53       01588
+___wmul                                           text53       01568
 ___wmul@multiplicand                              cstackBANK0  00022
 ___wmul@multiplier                                cstackBANK0  00020
 ___wmul@product                                   cstackBANK0  00024
-__end_of_ActivateHandPosition                     text40       013A8
+__end_of_ActivateHandPosition                     text40       013A0
 __end_of_AfterDetectedLoadPosition                text31       003FA
 __end_of_CalcMotorStepCounter                     text61       006C0
-__end_of_ComparatorOff                            text131      013DF
-__end_of_ComparatorOn                             text130      015BF
+__end_of_ComparatorOff                            text131      013D7
+__end_of_ComparatorOn                             text130      0159F
 __end_of_CorrectPosition                          text64       00845
-__end_of_DAC_Initialize                           text11       0107B
-__end_of_DeactivateHandPosition                   text55       01396
+__end_of_DAC_Initialize                           text11       01073
+__end_of_DeactivateHandPosition                   text55       0138E
 __end_of_DetermineBasePosition                    text39       01000
-__end_of_ExcitatingOutOff                         text83       010F5
-__end_of_ExcitatingOutOn                          text82       0171E
-__end_of_GetIsMotorActive                         text59       01407
+__end_of_ExcitatingOutOff                         text83       010ED
+__end_of_ExcitatingOutOn                          text82       0171C
+__end_of_GetIsMotorActive                         text59       013FF
 __end_of_INTERRUPT_InterruptManager               intentry     0001C
 __end_of_InitPositionSearch                       text52       00EBA
-__end_of_InitPulsePositionTable                   text74       012E4
-__end_of_MoveTargetPosition                       text38       013F2
-__end_of_OSCILLATOR_Initialize                    text10       01081
-__end_of_PIN_MANAGER_Initialize                   text9        0153B
+__end_of_InitPulsePositionTable                   text74       012DC
+__end_of_MoveTargetPosition                       text38       013EA
+__end_of_OSCILLATOR_Initialize                    text10       01079
+__end_of_PIN_MANAGER_Initialize                   text9        0151B
 __end_of_PriorUpdateCorrentPosition               text63       00910
 __end_of_SPIControl_ExecuteCommand                text42       00BFB
-__end_of_SPIControl_RecieveComannd                text13       013BA
-__end_of_SPIControl_SetNotification               text30       01613
-__end_of_SPI_Initialize                           text8        010AF
+__end_of_SPIControl_RecieveComannd                text13       013B2
+__end_of_SPIControl_SetNotification               text30       015F3
+__end_of_SPI_Initialize                           text8        010A7
 __end_of_SPI_Open                                 text12       00966
-__end_of_SPI_ReadByte                             text41       0105D
-__end_of_SYSTEM_Initialize                        text3        0141C
+__end_of_SPI_ReadByte                             text41       01055
+__end_of_SYSTEM_Initialize                        text3        01414
 __end_of_SaveLoadPosition                         text37       00CF7
-__end_of_SetAfterDetectLoadFunc                   text57       010D0
-__end_of_SetAfterMotorStopFunc                    text58       010A5
-__end_of_SetDataTRISxWork_M0_SPK_POL0_OPEN        text114      011D0
-__end_of_SetDataTRISxWork_M0_SPK_POL0_SHORT       text113      01490
-__end_of_SetDataTRISxWork_M0_SPK_POL1_OPEN        text111      011DF
-__end_of_SetDataTRISxWork_M0_SPK_POL1_SHORT       text110      014A8
-__end_of_SetDataTRISxWork_M1_SPK_POL0_OPEN        text94       01284
-__end_of_SetDataTRISxWork_M1_SPK_POL0_SHORT       text93       014C0
-__end_of_SetDataTRISxWork_M1_SPK_POL1_OPEN        text91       01293
-__end_of_SetDataTRISxWork_M1_SPK_POL1_SHORT       text90       014D8
+__end_of_SetAfterDetectLoadFunc                   text57       010C8
+__end_of_SetAfterMotorStopFunc                    text58       0109D
+__end_of_SetDataTRISxWork_M0_SPK_POL0_OPEN        text114      011C8
+__end_of_SetDataTRISxWork_M0_SPK_POL0_SHORT       text113      01488
+__end_of_SetDataTRISxWork_M0_SPK_POL1_OPEN        text111      011D7
+__end_of_SetDataTRISxWork_M0_SPK_POL1_SHORT       text110      014A0
+__end_of_SetDataTRISxWork_M1_SPK_POL0_OPEN        text94       0127C
+__end_of_SetDataTRISxWork_M1_SPK_POL0_SHORT       text93       014B8
+__end_of_SetDataTRISxWork_M1_SPK_POL1_OPEN        text91       0128B
+__end_of_SetDataTRISxWork_M1_SPK_POL1_SHORT       text90       014D0
 __end_of_SetDataTRISxWork_SPK_OPEN                text86       01800
-__end_of_SetDataTRISxWork_SPK_SHORT               text87       015DB
+__end_of_SetDataTRISxWork_SPK_SHORT               text87       015BB
 __end_of_SetDriveType                             text71       00E1A
-__end_of_SetExcitatingOutOffData                  text49       015F7
+__end_of_SetExcitatingOutOffData                  text49       015D7
 __end_of_SetFwdPulseWithCorrectProc               text15       008C2
-__end_of_SetMotorAddShakePulse                    text2        01554
-__end_of_SetMotorBitMotorNo                       text36       01306
-__end_of_SetMotorCorrectPositionStart             text33       01771
-__end_of_SetMotorDirection                        text70       01522
-__end_of_SetMotorDisableExcitating                text73       01360
-__end_of_SetMotorEnableExcitating                 text72       01372
+__end_of_SetMotorAddShakePulse                    text2        01534
+__end_of_SetMotorBitMotorNo                       text36       012FE
+__end_of_SetMotorCorrectPositionStart             text33       0176F
+__end_of_SetMotorDirection                        text70       01502
+__end_of_SetMotorDisableExcitating                text73       01358
+__end_of_SetMotorEnableExcitating                 text72       0136A
 __end_of_SetMotorFrequency                        text69       00882
-__end_of_SetMotorPositionSearchStart              text51       0164F
-__end_of_SetMotorStart                            text65       0109B
+__end_of_SetMotorPositionSearchStart              text51       0164D
+__end_of_SetMotorStart                            text65       01093
 __end_of_SetMotorStartSPK                         text46       017C8
-__end_of_SetMotorStepCounter                      text62       0110F
-__end_of_SetMotorStop                             text56       01384
-__end_of_SetMotorStopSPK                          text43       014F0
+__end_of_SetMotorStepCounter                      text62       01107
+__end_of_SetMotorStop                             text56       0137C
+__end_of_SetMotorStopSPK                          text43       0162D
 __end_of_SetOutPutLATX                            text50       00AA6
-__end_of_SetPulseOutLATxWork_M0_FWD_POL0_OFF      text122      01433
-__end_of_SetPulseOutLATxWork_M0_FWD_POL0_P1       text126      01167
-__end_of_SetPulseOutLATxWork_M0_FWD_POL0_P2       text123      01194
-__end_of_SetPulseOutLATxWork_M0_FWD_POL1_OFF      text120      0144A
-__end_of_SetPulseOutLATxWork_M0_FWD_POL1_P1       text127      01158
-__end_of_SetPulseOutLATxWork_M0_FWD_POL1_P2       text121      011A3
-__end_of_SetPulseOutLATxWork_M0_REV_POL0_OFF      text118      012A3
-__end_of_SetPulseOutLATxWork_M0_REV_POL0_P1       text124      01185
-__end_of_SetPulseOutLATxWork_M0_REV_POL0_P2       text119      011B2
-__end_of_SetPulseOutLATxWork_M0_REV_POL1_OFF      text116      012B3
-__end_of_SetPulseOutLATxWork_M0_REV_POL1_P1       text125      01176
-__end_of_SetPulseOutLATxWork_M0_REV_POL1_P2       text117      011C1
-__end_of_SetPulseOutLATxWork_M0_SHAKE_POL0_OFF    text115      01318
-__end_of_SetPulseOutLATxWork_M0_SHAKE_POL0_P0     text128      01149
-__end_of_SetPulseOutLATxWork_M0_SHAKE_POL1_OFF    text112      0132A
-__end_of_SetPulseOutLATxWork_M0_SHAKE_POL1_P0     text129      0113A
-__end_of_SetPulseOutLATxWork_M1_FWD_POL0_OFF      text102      01461
-__end_of_SetPulseOutLATxWork_M1_FWD_POL0_P1       text106      0121B
-__end_of_SetPulseOutLATxWork_M1_FWD_POL0_P2       text103      01248
-__end_of_SetPulseOutLATxWork_M1_FWD_POL1_OFF      text100      01478
-__end_of_SetPulseOutLATxWork_M1_FWD_POL1_P1       text107      0120C
-__end_of_SetPulseOutLATxWork_M1_FWD_POL1_P2       text101      01257
-__end_of_SetPulseOutLATxWork_M1_REV_POL0_OFF      text98       012C3
-__end_of_SetPulseOutLATxWork_M1_REV_POL0_P1       text104      01239
-__end_of_SetPulseOutLATxWork_M1_REV_POL0_P2       text99       01266
-__end_of_SetPulseOutLATxWork_M1_REV_POL1_OFF      text96       012D3
-__end_of_SetPulseOutLATxWork_M1_REV_POL1_P1       text105      0122A
-__end_of_SetPulseOutLATxWork_M1_REV_POL1_P2       text97       01275
-__end_of_SetPulseOutLATxWork_M1_SHAKE_POL0_OFF    text95       0133C
-__end_of_SetPulseOutLATxWork_M1_SHAKE_POL0_P0     text108      011FD
-__end_of_SetPulseOutLATxWork_M1_SHAKE_POL1_OFF    text92       0134E
-__end_of_SetPulseOutLATxWork_M1_SHAKE_POL1_P0     text109      011EE
-__end_of_SpiCmdFunc_DisableExcitating             text17       01075
-__end_of_SpiCmdFunc_EnableExcitating              text18       01070
-__end_of_SpiCmdFunc_FwdPulseNormal                text28       016F9
-__end_of_SpiCmdFunc_FwdPulsePositionCtl           text22       01670
-__end_of_SpiCmdFunc_FwdPulseWithCorrect           text23       0162F
-__end_of_SpiCmdFunc_FwdPulseWithShake             text26       01053
-__end_of_SpiCmdFunc_RevPulseNormal                text27       016B3
-__end_of_SpiCmdFunc_RevPulsePositionCtl           text21       01691
-__end_of_SpiCmdFunc_Search1008Position            text16       0179C
-__end_of_SpiCmdFunc_SearchBasePosition            text24       01747
-__end_of_SpiCmdFunc_SearchLoadPosition            text25       01054
-__end_of_SpiCmdFunc_StartDetectVrs                text20       01060
-__end_of_SpiCmdFunc_StopDetectVrs                 text19       01063
-__end_of_SpiCmdFunc_Test                          text29       01052
+__end_of_SetPulseOutLATxWork_M0_FWD_POL0_OFF      text122      0142B
+__end_of_SetPulseOutLATxWork_M0_FWD_POL0_P1       text126      0115F
+__end_of_SetPulseOutLATxWork_M0_FWD_POL0_P2       text123      0118C
+__end_of_SetPulseOutLATxWork_M0_FWD_POL1_OFF      text120      01442
+__end_of_SetPulseOutLATxWork_M0_FWD_POL1_P1       text127      01150
+__end_of_SetPulseOutLATxWork_M0_FWD_POL1_P2       text121      0119B
+__end_of_SetPulseOutLATxWork_M0_REV_POL0_OFF      text118      0129B
+__end_of_SetPulseOutLATxWork_M0_REV_POL0_P1       text124      0117D
+__end_of_SetPulseOutLATxWork_M0_REV_POL0_P2       text119      011AA
+__end_of_SetPulseOutLATxWork_M0_REV_POL1_OFF      text116      012AB
+__end_of_SetPulseOutLATxWork_M0_REV_POL1_P1       text125      0116E
+__end_of_SetPulseOutLATxWork_M0_REV_POL1_P2       text117      011B9
+__end_of_SetPulseOutLATxWork_M0_SHAKE_POL0_OFF    text115      01310
+__end_of_SetPulseOutLATxWork_M0_SHAKE_POL0_P0     text128      01141
+__end_of_SetPulseOutLATxWork_M0_SHAKE_POL1_OFF    text112      01322
+__end_of_SetPulseOutLATxWork_M0_SHAKE_POL1_P0     text129      01132
+__end_of_SetPulseOutLATxWork_M1_FWD_POL0_OFF      text102      01459
+__end_of_SetPulseOutLATxWork_M1_FWD_POL0_P1       text106      01213
+__end_of_SetPulseOutLATxWork_M1_FWD_POL0_P2       text103      01240
+__end_of_SetPulseOutLATxWork_M1_FWD_POL1_OFF      text100      01470
+__end_of_SetPulseOutLATxWork_M1_FWD_POL1_P1       text107      01204
+__end_of_SetPulseOutLATxWork_M1_FWD_POL1_P2       text101      0124F
+__end_of_SetPulseOutLATxWork_M1_REV_POL0_OFF      text98       012BB
+__end_of_SetPulseOutLATxWork_M1_REV_POL0_P1       text104      01231
+__end_of_SetPulseOutLATxWork_M1_REV_POL0_P2       text99       0125E
+__end_of_SetPulseOutLATxWork_M1_REV_POL1_OFF      text96       012CB
+__end_of_SetPulseOutLATxWork_M1_REV_POL1_P1       text105      01222
+__end_of_SetPulseOutLATxWork_M1_REV_POL1_P2       text97       0126D
+__end_of_SetPulseOutLATxWork_M1_SHAKE_POL0_OFF    text95       01334
+__end_of_SetPulseOutLATxWork_M1_SHAKE_POL0_P0     text108      011F5
+__end_of_SetPulseOutLATxWork_M1_SHAKE_POL1_OFF    text92       01346
+__end_of_SetPulseOutLATxWork_M1_SHAKE_POL1_P0     text109      011E6
+__end_of_SpiCmdFunc_DisableExcitating             text17       0106D
+__end_of_SpiCmdFunc_EnableExcitating              text18       01068
+__end_of_SpiCmdFunc_FwdPulseNormal                text28       016F7
+__end_of_SpiCmdFunc_FwdPulsePositionCtl           text22       0166E
+__end_of_SpiCmdFunc_FwdPulseWithCorrect           text23       0160F
+__end_of_SpiCmdFunc_FwdPulseWithShake             text26       0104B
+__end_of_SpiCmdFunc_RevPulseNormal                text27       016B1
+__end_of_SpiCmdFunc_RevPulsePositionCtl           text21       0168F
+__end_of_SpiCmdFunc_Search1008Position            text16       0179A
+__end_of_SpiCmdFunc_SearchBasePosition            text24       01745
+__end_of_SpiCmdFunc_SearchLoadPosition            text25       0104C
+__end_of_SpiCmdFunc_StartDetectVrs                text20       01058
+__end_of_SpiCmdFunc_StopDetectVrs                 text19       0105B
+__end_of_SpiCmdFunc_Test                          text29       0104A
 __end_of_SpiCmmandFunction                        stringtext1  0181C
-__end_of_SpkComparatorOff                         text45       0111C
+__end_of_SpkComparatorOff                         text45       01114
 __end_of_SpkComparatorOn                          text48       0080B
-__end_of_SpkVrsCheck                              text81       01102
+__end_of_SpkVrsCheck                              text81       010FA
 __end_of_StartPulseOutM0                          text67       00B16
 __end_of_StartPulseOutM1                          text66       00B88
-__end_of_TMR1_CallBack                            text134      010BA
-__end_of_TMR1_DefaultInterruptHandler             text135      01050
-__end_of_TMR1_ISR                                 text132      010DC
-__end_of_TMR1_Initialize                          text6        01588
-__end_of_TMR1_SetInterruptHandler                 text7        01091
+__end_of_TMR1_CallBack                            text134      010B2
+__end_of_TMR1_DefaultInterruptHandler             text135      01048
+__end_of_TMR1_ISR                                 text132      010D4
+__end_of_TMR1_Initialize                          text6        01568
+__end_of_TMR1_SetInterruptHandler                 text7        01089
 __end_of_TMR1_StopTimer                           text1        00800
-__end_of_TMR1_WriteTimer                          text133      0112B
-__end_of_TMR2_CallBack                            text77       010C5
-__end_of_TMR2_DefaultInterruptHandler             text79       01051
-__end_of_TMR2_ISR                                 text76       01067
-__end_of_TMR2_Initialize                          text5        013CC
+__end_of_TMR1_WriteTimer                          text133      01123
+__end_of_TMR2_CallBack                            text77       010BD
+__end_of_TMR2_DefaultInterruptHandler             text79       01049
+__end_of_TMR2_ISR                                 text76       0105F
+__end_of_TMR2_Initialize                          text5        013C4
 __end_of_TMR2_Interrupt                           text78       005EB
 __end_of_TMR2_Interrupt_SPK                       text80       007FE
-__end_of_TMR2_SetInterruptHandler                 text47       01089
-__end_of_TMR2_StartTimer                          text68       01057
-__end_of_TMR2_StopTimer                           text44       0105A
+__end_of_TMR2_SetInterruptHandler                 text47       01081
+__end_of_TMR2_StartTimer                          text68       0104F
+__end_of_TMR2_StopTimer                           text44       01052
 __end_of_TblM0PulseChangePosition                 stringtext3  0184E
 __end_of_TblM1PulseChangePosition                 stringtext2  01835
 __end_of_TblMaxSearchSteps                        stringtext5  01856
 __end_of_TblMaxSteps                              stringtext6  0185A
 __end_of_UpdataHandPosition                       text35       00F5A
 __end_of_UpdateCurrentPositionByFinePosition      text34       00D85
-__end_of_UpdateTargetPosition                     text60       016D6
+__end_of_UpdateTargetPosition                     text60       016D4
 __end_of_VerifyHandPosition_LoadPosition          text32       00784
-__end_of_VrsCheck                                 text89       0156E
-__end_of_WDT_Initialize                           text4        0106B
+__end_of_VrsCheck                                 text89       0154E
+__end_of_WDT_Initialize                           text4        01063
 __end_of_WatchMotorDriveFinish                    text14       00C74
-__end_of___bmul                                   text54       012F5
-__end_of___wmul                                   text53       015A3
+__end_of___bmul                                   text54       012ED
+__end_of___wmul                                   text53       01583
 __end_of__initialization                          cinit        00059
 __end_of_main                                     maintext     009CC
 __end_of_offsetBasePosition                       stringtext4  01852
 __end_of_spi_configuration                        stringtext7  0185E
-__end_ofi1_SetExcitatingOutOffData                text84       01509
+__end_ofi1_SetExcitatingOutOffData                text84       014E9
 __end_ofi1_SetOutPutLATX                          text85       00A39
 __end_ofi1_TMR2_StopTimer                         text88       00004
 __initialization                                  cinit        0001E
@@ -1379,139 +1379,139 @@ __pstringtext5                                    stringtext5  01852
 __pstringtext6                                    stringtext6  01856
 __pstringtext7                                    stringtext7  0185A
 __ptext1                                          text1        007FE
-__ptext10                                         text10       0107B
-__ptext100                                        text100      01461
-__ptext101                                        text101      01248
-__ptext102                                        text102      0144A
-__ptext103                                        text103      01239
-__ptext104                                        text104      0122A
-__ptext105                                        text105      0121B
-__ptext106                                        text106      0120C
-__ptext107                                        text107      011FD
-__ptext108                                        text108      011EE
-__ptext109                                        text109      011DF
-__ptext11                                         text11       01075
-__ptext110                                        text110      01490
-__ptext111                                        text111      011D0
-__ptext112                                        text112      01318
-__ptext113                                        text113      01478
-__ptext114                                        text114      011C1
-__ptext115                                        text115      01306
-__ptext116                                        text116      012A3
-__ptext117                                        text117      011B2
-__ptext118                                        text118      01293
-__ptext119                                        text119      011A3
+__ptext10                                         text10       01073
+__ptext100                                        text100      01459
+__ptext101                                        text101      01240
+__ptext102                                        text102      01442
+__ptext103                                        text103      01231
+__ptext104                                        text104      01222
+__ptext105                                        text105      01213
+__ptext106                                        text106      01204
+__ptext107                                        text107      011F5
+__ptext108                                        text108      011E6
+__ptext109                                        text109      011D7
+__ptext11                                         text11       0106D
+__ptext110                                        text110      01488
+__ptext111                                        text111      011C8
+__ptext112                                        text112      01310
+__ptext113                                        text113      01470
+__ptext114                                        text114      011B9
+__ptext115                                        text115      012FE
+__ptext116                                        text116      0129B
+__ptext117                                        text117      011AA
+__ptext118                                        text118      0128B
+__ptext119                                        text119      0119B
 __ptext12                                         text12       00910
-__ptext120                                        text120      01433
-__ptext121                                        text121      01194
-__ptext122                                        text122      0141C
-__ptext123                                        text123      01185
-__ptext124                                        text124      01176
-__ptext125                                        text125      01167
-__ptext126                                        text126      01158
-__ptext127                                        text127      01149
-__ptext128                                        text128      0113A
-__ptext129                                        text129      0112B
-__ptext13                                         text13       013A8
-__ptext130                                        text130      015A3
-__ptext131                                        text131      013CC
-__ptext132                                        text132      010D0
-__ptext133                                        text133      0111C
-__ptext134                                        text134      010AF
-__ptext135                                        text135      0104F
+__ptext120                                        text120      0142B
+__ptext121                                        text121      0118C
+__ptext122                                        text122      01414
+__ptext123                                        text123      0117D
+__ptext124                                        text124      0116E
+__ptext125                                        text125      0115F
+__ptext126                                        text126      01150
+__ptext127                                        text127      01141
+__ptext128                                        text128      01132
+__ptext129                                        text129      01123
+__ptext13                                         text13       013A0
+__ptext130                                        text130      01583
+__ptext131                                        text131      013C4
+__ptext132                                        text132      010C8
+__ptext133                                        text133      01114
+__ptext134                                        text134      010A7
+__ptext135                                        text135      01047
 __ptext14                                         text14       00BFB
 __ptext15                                         text15       00882
-__ptext16                                         text16       01771
-__ptext17                                         text17       01070
-__ptext18                                         text18       0106B
-__ptext19                                         text19       01060
-__ptext2                                          text2        0153B
-__ptext20                                         text20       0105D
-__ptext21                                         text21       01670
-__ptext22                                         text22       0164F
-__ptext23                                         text23       01613
-__ptext24                                         text24       0171E
-__ptext25                                         text25       01053
-__ptext26                                         text26       01052
-__ptext27                                         text27       01691
-__ptext28                                         text28       016D6
-__ptext29                                         text29       01051
-__ptext3                                          text3        01407
-__ptext30                                         text30       015F7
+__ptext16                                         text16       0176F
+__ptext17                                         text17       01068
+__ptext18                                         text18       01063
+__ptext19                                         text19       01058
+__ptext2                                          text2        0151B
+__ptext20                                         text20       01055
+__ptext21                                         text21       0166E
+__ptext22                                         text22       0164D
+__ptext23                                         text23       015F3
+__ptext24                                         text24       0171C
+__ptext25                                         text25       0104B
+__ptext26                                         text26       0104A
+__ptext27                                         text27       0168F
+__ptext28                                         text28       016D4
+__ptext29                                         text29       01049
+__ptext3                                          text3        013FF
+__ptext30                                         text30       015D7
 __ptext31                                         text31       0005D
 __ptext32                                         text32       006C0
-__ptext33                                         text33       01747
+__ptext33                                         text33       01745
 __ptext34                                         text34       00CF7
 __ptext35                                         text35       00EBA
-__ptext36                                         text36       012F5
+__ptext36                                         text36       012ED
 __ptext37                                         text37       00C74
-__ptext38                                         text38       013DF
+__ptext38                                         text38       013D7
 __ptext39                                         text39       00F5A
-__ptext4                                          text4        01067
-__ptext40                                         text40       01396
-__ptext41                                         text41       0105A
+__ptext4                                          text4        0105F
+__ptext40                                         text40       0138E
+__ptext41                                         text41       01052
 __ptext42                                         text42       00B88
-__ptext43                                         text43       014D8
-__ptext44                                         text44       01057
-__ptext45                                         text45       0110F
-__ptext46                                         text46       0179C
-__ptext47                                         text47       01081
+__ptext43                                         text43       0160F
+__ptext44                                         text44       0104F
+__ptext45                                         text45       01107
+__ptext46                                         text46       0179A
+__ptext47                                         text47       01079
 __ptext48                                         text48       00800
-__ptext49                                         text49       015DB
-__ptext5                                          text5        013BA
+__ptext49                                         text49       015BB
+__ptext5                                          text5        013B2
 __ptext50                                         text50       00A39
-__ptext51                                         text51       0162F
+__ptext51                                         text51       0162D
 __ptext52                                         text52       00E1A
-__ptext53                                         text53       01588
-__ptext54                                         text54       012E4
-__ptext55                                         text55       01384
-__ptext56                                         text56       01372
-__ptext57                                         text57       010C5
-__ptext58                                         text58       0109B
-__ptext59                                         text59       013F2
-__ptext6                                          text6        0156E
-__ptext60                                         text60       016B3
+__ptext53                                         text53       01568
+__ptext54                                         text54       012DC
+__ptext55                                         text55       0137C
+__ptext56                                         text56       0136A
+__ptext57                                         text57       010BD
+__ptext58                                         text58       01093
+__ptext59                                         text59       013EA
+__ptext6                                          text6        0154E
+__ptext60                                         text60       016B1
 __ptext61                                         text61       005EB
-__ptext62                                         text62       01102
+__ptext62                                         text62       010FA
 __ptext63                                         text63       008C2
 __ptext64                                         text64       0080B
-__ptext65                                         text65       01091
+__ptext65                                         text65       01089
 __ptext66                                         text66       00B16
 __ptext67                                         text67       00AA6
-__ptext68                                         text68       01054
+__ptext68                                         text68       0104C
 __ptext69                                         text69       00845
-__ptext7                                          text7        01089
-__ptext70                                         text70       01509
+__ptext7                                          text7        01081
+__ptext70                                         text70       014E9
 __ptext71                                         text71       00D85
-__ptext72                                         text72       01360
-__ptext73                                         text73       0134E
-__ptext74                                         text74       012D3
-__ptext76                                         text76       01063
-__ptext77                                         text77       010BA
+__ptext72                                         text72       01358
+__ptext73                                         text73       01346
+__ptext74                                         text74       012CB
+__ptext76                                         text76       0105B
+__ptext77                                         text77       010B2
 __ptext78                                         text78       003FA
-__ptext79                                         text79       01050
-__ptext8                                          text8        010A5
+__ptext79                                         text79       01048
+__ptext8                                          text8        0109D
 __ptext80                                         text80       00784
-__ptext81                                         text81       010F5
-__ptext82                                         text82       016F9
-__ptext83                                         text83       010E8
-__ptext84                                         text84       014F0
+__ptext81                                         text81       010ED
+__ptext82                                         text82       016F7
+__ptext83                                         text83       010E0
+__ptext84                                         text84       014D0
 __ptext85                                         text85       009CC
 __ptext86                                         text86       017C8
-__ptext87                                         text87       015BF
+__ptext87                                         text87       0159F
 __ptext88                                         text88       00002
-__ptext89                                         text89       01554
-__ptext9                                          text9        01522
-__ptext90                                         text90       014C0
-__ptext91                                         text91       01284
-__ptext92                                         text92       0133C
-__ptext93                                         text93       014A8
-__ptext94                                         text94       01275
-__ptext95                                         text95       0132A
-__ptext96                                         text96       012C3
-__ptext97                                         text97       01266
-__ptext98                                         text98       012B3
-__ptext99                                         text99       01257
+__ptext89                                         text89       01534
+__ptext9                                          text9        01502
+__ptext90                                         text90       014B8
+__ptext91                                         text91       0127C
+__ptext92                                         text92       01334
+__ptext93                                         text93       014A0
+__ptext94                                         text94       0126D
+__ptext95                                         text95       01322
+__ptext96                                         text96       012BB
+__ptext97                                         text97       0125E
+__ptext98                                         text98       012AB
+__ptext99                                         text99       0124F
 __size_of_ActivateHandPosition                    (abs)        00000
 __size_of_AfterDetectedLoadPosition               (abs)        00000
 __size_of_CalcMotorStepCounter                    (abs)        00000
@@ -1743,9 +1743,9 @@ _targetPosition                                   bssBANK2     00164
 _timer1ReloadVal                                  nvBANK2      0016A
 _vrsCountValue                                    bssBANK1     000BC
 btemp                                             (abs)        0007E
-clear_ram0                                        clrtext      010DC
+clear_ram0                                        clrtext      010D4
 end_of_initialization                             cinit        00059
-i1_SetExcitatingOutOffData                        text84       014F0
+i1_SetExcitatingOutOffData                        text84       014D0
 i1_SetOutPutLATX                                  text85       009CC
 i1_TMR2_StopTimer                                 text88       00002
 int$flags                                         (abs)        0007E
@@ -1834,7 +1834,7 @@ Total ram usage:        0 bytes
 
  *************** function _SetMotorAddShakePulse *****************
  Defined at:
-		line 1790 in file "MotorDrive.c"
+		line 1797 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
   sw              1    0[BANK0 ] unsigned char 
@@ -2204,7 +2204,7 @@ Total ram usage:        1 bytes
 
  *************** function _WatchMotorDriveFinish *****************
  Defined at:
-		line 1208 in file "MotorDrive.c"
+		line 1209 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2786,7 +2786,7 @@ Total ram usage:        2 bytes
 
  *************** function _AfterDetectedLoadPosition *****************
  Defined at:
-		line 2046 in file "MotorDrive.c"
+		line 2053 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1   29[BANK0 ] unsigned char 
  Auto vars:     Size  Location     Type
@@ -2831,7 +2831,7 @@ Total ram usage:       11 bytes
 
  *************** function _VerifyHandPosition_LoadPosition *****************
  Defined at:
-		line 2553 in file "MotorDrive.c"
+		line 2560 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1   29[BANK0 ] unsigned char 
  Auto vars:     Size  Location     Type
@@ -2871,7 +2871,7 @@ Total ram usage:       17 bytes
 
  *************** function _SetMotorCorrectPositionStart *****************
  Defined at:
-		line 1903 in file "MotorDrive.c"
+		line 1910 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -2902,7 +2902,7 @@ Total ram usage:        3 bytes
 
  *************** function _UpdateCurrentPositionByFinePosition *****************
  Defined at:
-		line 2450 in file "MotorDrive.c"
+		line 2457 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -2936,7 +2936,7 @@ Total ram usage:       12 bytes
 
  *************** function _UpdataHandPosition *****************
  Defined at:
-		line 2418 in file "MotorDrive.c"
+		line 2425 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -2968,7 +2968,7 @@ Total ram usage:       12 bytes
 
  *************** function _SetMotorBitMotorNo *****************
  Defined at:
-		line 2650 in file "MotorDrive.c"
+		line 2657 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -2998,7 +2998,7 @@ Total ram usage:        3 bytes
 
  *************** function _SaveLoadPosition *****************
  Defined at:
-		line 2482 in file "MotorDrive.c"
+		line 2489 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -3030,7 +3030,7 @@ Total ram usage:       18 bytes
 
  *************** function _MoveTargetPosition *****************
  Defined at:
-		line 2532 in file "MotorDrive.c"
+		line 2539 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -3063,7 +3063,7 @@ Total ram usage:        2 bytes
 
  *************** function _DetermineBasePosition *****************
  Defined at:
-		line 2367 in file "MotorDrive.c"
+		line 2374 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -3097,7 +3097,7 @@ Total ram usage:       12 bytes
 
  *************** function _ActivateHandPosition *****************
  Defined at:
-		line 2502 in file "MotorDrive.c"
+		line 2509 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -3203,7 +3203,7 @@ Total ram usage:        5 bytes
 
  *************** function _SetMotorStopSPK *****************
  Defined at:
-		line 1469 in file "MotorDrive.c"
+		line 1474 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3219,9 +3219,9 @@ Total ram usage:        5 bytes
  Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6
       Params:         0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0
-      Totals:         0       0       0       0       0       0       0       0
-Total ram usage:        0 bytes
+      Temps:          0       1       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0
+Total ram usage:        1 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:   10
  This function calls:
@@ -3266,7 +3266,7 @@ Total ram usage:        0 bytes
 
  *************** function _SpkComparatorOff *****************
  Defined at:
-		line 2740 in file "MotorDrive.c"
+		line 2747 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3296,7 +3296,7 @@ Total ram usage:        0 bytes
 
  *************** function _SetMotorStartSPK *****************
  Defined at:
-		line 1423 in file "MotorDrive.c"
+		line 1424 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3363,7 +3363,7 @@ Total ram usage:        2 bytes
 
  *************** function _SpkComparatorOn *****************
  Defined at:
-		line 2758 in file "MotorDrive.c"
+		line 2765 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3393,7 +3393,7 @@ Total ram usage:        0 bytes
 
  *************** function _SetExcitatingOutOffData *****************
  Defined at:
-		line 2818 in file "MotorDrive.c"
+		line 2825 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3424,7 +3424,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetOutPutLATX *****************
  Defined at:
-		line 2958 in file "MotorDrive.c"
+		line 2965 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3454,7 +3454,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetMotorPositionSearchStart *****************
  Defined at:
-		line 1880 in file "MotorDrive.c"
+		line 1887 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -3487,7 +3487,7 @@ Total ram usage:        1 bytes
 
  *************** function _InitPositionSearch *****************
  Defined at:
-		line 1927 in file "MotorDrive.c"
+		line 1934 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -3593,7 +3593,7 @@ Total ram usage:        4 bytes
 
  *************** function _DeactivateHandPosition *****************
  Defined at:
-		line 2517 in file "MotorDrive.c"
+		line 2524 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -3624,7 +3624,7 @@ Total ram usage:        3 bytes
 
  *************** function _SetMotorStop *****************
  Defined at:
-		line 2029 in file "MotorDrive.c"
+		line 2036 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -3654,7 +3654,7 @@ Total ram usage:        3 bytes
 
  *************** function _SetAfterDetectLoadFunc *****************
  Defined at:
-		line 1656 in file "MotorDrive.c"
+		line 1663 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
   func            2    0[BANK0 ] PTR FTN(unsigned char ,)
@@ -3689,7 +3689,7 @@ Total ram usage:        3 bytes
 
  *************** function _SetAfterMotorStopFunc *****************
  Defined at:
-		line 1643 in file "MotorDrive.c"
+		line 1650 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
   func            2    0[BANK0 ] PTR FTN(unsigned char ,)
@@ -3726,7 +3726,7 @@ Total ram usage:        3 bytes
 
  *************** function _GetIsMotorActive *****************
  Defined at:
-		line 2634 in file "MotorDrive.c"
+		line 2641 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -3758,7 +3758,7 @@ Total ram usage:        4 bytes
 
  *************** function _UpdateTargetPosition *****************
  Defined at:
-		line 2012 in file "MotorDrive.c"
+		line 2019 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
   steps           2   13[BANK0 ] short 
@@ -3791,7 +3791,7 @@ Total ram usage:        5 bytes
 
  *************** function _CalcMotorStepCounter *****************
  Defined at:
-		line 1740 in file "MotorDrive.c"
+		line 1747 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -3828,7 +3828,7 @@ Total ram usage:       11 bytes
 
  *************** function _SetMotorStepCounter *****************
  Defined at:
-		line 1700 in file "MotorDrive.c"
+		line 1707 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
   steps           2   16[BANK0 ] short 
@@ -3863,7 +3863,7 @@ Total ram usage:        3 bytes
 
  *************** function _PriorUpdateCorrentPosition *****************
  Defined at:
-		line 1986 in file "MotorDrive.c"
+		line 1993 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -3894,7 +3894,7 @@ Total ram usage:        3 bytes
 
  *************** function _CorrectPosition *****************
  Defined at:
-		line 1962 in file "MotorDrive.c"
+		line 1969 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   pos             2    6[BANK0 ] PTR short 
 		 -> detectBasePosition(4), missingDetectFinePosition(2), detectLoadPosition(92), currentPosition(4), 
@@ -3933,7 +3933,7 @@ Total ram usage:        7 bytes
 
  *************** function _SetMotorStart *****************
  Defined at:
-		line 1859 in file "MotorDrive.c"
+		line 1866 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -3972,7 +3972,7 @@ Total ram usage:        1 bytes
 
  *************** function _StartPulseOutM1 *****************
  Defined at:
-		line 1341 in file "MotorDrive.c"
+		line 1342 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4002,7 +4002,7 @@ Total ram usage:        1 bytes
 
  *************** function _StartPulseOutM0 *****************
  Defined at:
-		line 1268 in file "MotorDrive.c"
+		line 1269 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4064,7 +4064,7 @@ Total ram usage:        0 bytes
 
  *************** function _SetMotorFrequency *****************
  Defined at:
-		line 1821 in file "MotorDrive.c"
+		line 1828 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
   type            1    0[BANK0 ] unsigned char 
@@ -4104,7 +4104,7 @@ Total ram usage:        4 bytes
 
  *************** function _SetMotorDirection *****************
  Defined at:
-		line 1676 in file "MotorDrive.c"
+		line 1683 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
   dir             1    0[BANK0 ] unsigned char 
@@ -4140,7 +4140,7 @@ Total ram usage:        4 bytes
 
  *************** function _SetDriveType *****************
  Defined at:
-		line 1536 in file "MotorDrive.c"
+		line 1543 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
   drive_type      1    0[BANK0 ] unsigned char 
@@ -4178,7 +4178,7 @@ Total ram usage:        4 bytes
 
  *************** function _SetMotorEnableExcitating *****************
  Defined at:
-		line 1497 in file "MotorDrive.c"
+		line 1504 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -4208,7 +4208,7 @@ Total ram usage:        3 bytes
 
  *************** function _SetMotorDisableExcitating *****************
  Defined at:
-		line 1512 in file "MotorDrive.c"
+		line 1519 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -4238,7 +4238,7 @@ Total ram usage:        3 bytes
 
  *************** function _InitPulsePositionTable *****************
  Defined at:
-		line 799 in file "MotorDrive.c"
+		line 801 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -4362,7 +4362,7 @@ Total ram usage:        0 bytes
 
  *************** function _TMR2_Interrupt *****************
  Defined at:
-		line 867 in file "MotorDrive.c"
+		line 869 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4468,7 +4468,7 @@ Total ram usage:        0 bytes
 
  *************** function _TMR2_Interrupt_SPK *****************
  Defined at:
-		line 1112 in file "MotorDrive.c"
+		line 1114 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4502,7 +4502,7 @@ Total ram usage:        1 bytes
 
  *************** function _SpkVrsCheck *****************
  Defined at:
-		line 2776 in file "MotorDrive.c"
+		line 2783 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4533,7 +4533,7 @@ Total ram usage:        0 bytes
 
  *************** function _ExcitatingOutOn *****************
  Defined at:
-		line 2850 in file "MotorDrive.c"
+		line 2857 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4563,7 +4563,7 @@ Total ram usage:        1 bytes
 
  *************** function _ExcitatingOutOff *****************
  Defined at:
-		line 2797 in file "MotorDrive.c"
+		line 2804 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4593,7 +4593,7 @@ Total ram usage:        1 bytes
 
  *************** function i1_SetExcitatingOutOffData *****************
  Defined at:
-		line 2818 in file "MotorDrive.c"
+		line 2825 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4623,7 +4623,7 @@ Total ram usage:        1 bytes
 
  *************** function i1_SetOutPutLATX *****************
  Defined at:
-		line 2958 in file "MotorDrive.c"
+		line 2965 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4653,7 +4653,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetDataTRISxWork_SPK_OPEN *****************
  Defined at:
-		line 2887 in file "MotorDrive.c"
+		line 2894 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4683,7 +4683,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetDataTRISxWork_SPK_SHORT *****************
  Defined at:
-		line 2933 in file "MotorDrive.c"
+		line 2940 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4743,7 +4743,7 @@ Total ram usage:        0 bytes
 
  *************** function _VrsCheck *****************
  Defined at:
-		line 2717 in file "MotorDrive.c"
+		line 2724 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -4772,7 +4772,7 @@ Total ram usage:        2 bytes
 
  *************** function _SetDataTRISxWork_M1_SPK_POL1_SHORT *****************
  Defined at:
-		line 3586 in file "MotorDrive.c"
+		line 3593 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4802,7 +4802,7 @@ Total ram usage:        0 bytes
 
  *************** function _SetDataTRISxWork_M1_SPK_POL1_OPEN *****************
  Defined at:
-		line 3574 in file "MotorDrive.c"
+		line 3581 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4833,7 +4833,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M1_SHAKE_POL1_OFF *****************
  Defined at:
-		line 3555 in file "MotorDrive.c"
+		line 3562 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4863,7 +4863,7 @@ Total ram usage:        0 bytes
 
  *************** function _SetDataTRISxWork_M1_SPK_POL0_SHORT *****************
  Defined at:
-		line 3523 in file "MotorDrive.c"
+		line 3530 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4893,7 +4893,7 @@ Total ram usage:        0 bytes
 
  *************** function _SetDataTRISxWork_M1_SPK_POL0_OPEN *****************
  Defined at:
-		line 3511 in file "MotorDrive.c"
+		line 3518 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4924,7 +4924,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M1_SHAKE_POL0_OFF *****************
  Defined at:
-		line 3492 in file "MotorDrive.c"
+		line 3499 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4954,7 +4954,7 @@ Total ram usage:        0 bytes
 
  *************** function _SetPulseOutLATxWork_M1_REV_POL1_OFF *****************
  Defined at:
-		line 3336 in file "MotorDrive.c"
+		line 3343 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -4984,7 +4984,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M1_REV_POL1_P2 *****************
  Defined at:
-		line 3324 in file "MotorDrive.c"
+		line 3331 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5014,7 +5014,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M1_REV_POL0_OFF *****************
  Defined at:
-		line 3297 in file "MotorDrive.c"
+		line 3304 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5044,7 +5044,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M1_REV_POL0_P2 *****************
  Defined at:
-		line 3285 in file "MotorDrive.c"
+		line 3292 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5074,7 +5074,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M1_FWD_POL1_OFF *****************
  Defined at:
-		line 3252 in file "MotorDrive.c"
+		line 3259 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5104,7 +5104,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M1_FWD_POL1_P2 *****************
  Defined at:
-		line 3240 in file "MotorDrive.c"
+		line 3247 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5134,7 +5134,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M1_FWD_POL0_OFF *****************
  Defined at:
-		line 3207 in file "MotorDrive.c"
+		line 3214 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5164,7 +5164,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M1_FWD_POL0_P2 *****************
  Defined at:
-		line 3195 in file "MotorDrive.c"
+		line 3202 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5194,7 +5194,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M1_REV_POL0_P1 *****************
  Defined at:
-		line 3273 in file "MotorDrive.c"
+		line 3280 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5225,7 +5225,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M1_REV_POL1_P1 *****************
  Defined at:
-		line 3312 in file "MotorDrive.c"
+		line 3319 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5256,7 +5256,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M1_FWD_POL0_P1 *****************
  Defined at:
-		line 3183 in file "MotorDrive.c"
+		line 3190 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5288,7 +5288,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M1_FWD_POL1_P1 *****************
  Defined at:
-		line 3228 in file "MotorDrive.c"
+		line 3235 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5320,7 +5320,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M1_SHAKE_POL0_P0 *****************
  Defined at:
-		line 3480 in file "MotorDrive.c"
+		line 3487 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5351,7 +5351,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M1_SHAKE_POL1_P0 *****************
  Defined at:
-		line 3543 in file "MotorDrive.c"
+		line 3550 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5382,7 +5382,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetDataTRISxWork_M0_SPK_POL1_SHORT *****************
  Defined at:
-		line 3459 in file "MotorDrive.c"
+		line 3466 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5412,7 +5412,7 @@ Total ram usage:        0 bytes
 
  *************** function _SetDataTRISxWork_M0_SPK_POL1_OPEN *****************
  Defined at:
-		line 3447 in file "MotorDrive.c"
+		line 3454 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5443,7 +5443,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M0_SHAKE_POL1_OFF *****************
  Defined at:
-		line 3428 in file "MotorDrive.c"
+		line 3435 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5473,7 +5473,7 @@ Total ram usage:        0 bytes
 
  *************** function _SetDataTRISxWork_M0_SPK_POL0_SHORT *****************
  Defined at:
-		line 3396 in file "MotorDrive.c"
+		line 3403 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5503,7 +5503,7 @@ Total ram usage:        0 bytes
 
  *************** function _SetDataTRISxWork_M0_SPK_POL0_OPEN *****************
  Defined at:
-		line 3384 in file "MotorDrive.c"
+		line 3391 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5534,7 +5534,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M0_SHAKE_POL0_OFF *****************
  Defined at:
-		line 3365 in file "MotorDrive.c"
+		line 3372 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5564,7 +5564,7 @@ Total ram usage:        0 bytes
 
  *************** function _SetPulseOutLATxWork_M0_REV_POL1_OFF *****************
  Defined at:
-		line 3167 in file "MotorDrive.c"
+		line 3174 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5594,7 +5594,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M0_REV_POL1_P2 *****************
  Defined at:
-		line 3155 in file "MotorDrive.c"
+		line 3162 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5624,7 +5624,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M0_REV_POL0_OFF *****************
  Defined at:
-		line 3128 in file "MotorDrive.c"
+		line 3135 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5654,7 +5654,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M0_REV_POL0_P2 *****************
  Defined at:
-		line 3116 in file "MotorDrive.c"
+		line 3123 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5684,7 +5684,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M0_FWD_POL1_OFF *****************
  Defined at:
-		line 3083 in file "MotorDrive.c"
+		line 3090 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5714,7 +5714,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M0_FWD_POL1_P2 *****************
  Defined at:
-		line 3071 in file "MotorDrive.c"
+		line 3078 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5744,7 +5744,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M0_FWD_POL0_OFF *****************
  Defined at:
-		line 3038 in file "MotorDrive.c"
+		line 3045 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5774,7 +5774,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M0_FWD_POL0_P2 *****************
  Defined at:
-		line 3026 in file "MotorDrive.c"
+		line 3033 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5804,7 +5804,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M0_REV_POL0_P1 *****************
  Defined at:
-		line 3104 in file "MotorDrive.c"
+		line 3111 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5835,7 +5835,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M0_REV_POL1_P1 *****************
  Defined at:
-		line 3143 in file "MotorDrive.c"
+		line 3150 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5866,7 +5866,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M0_FWD_POL0_P1 *****************
  Defined at:
-		line 3014 in file "MotorDrive.c"
+		line 3021 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5898,7 +5898,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M0_FWD_POL1_P1 *****************
  Defined at:
-		line 3059 in file "MotorDrive.c"
+		line 3066 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5930,7 +5930,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M0_SHAKE_POL0_P0 *****************
  Defined at:
-		line 3353 in file "MotorDrive.c"
+		line 3360 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5961,7 +5961,7 @@ Total ram usage:        1 bytes
 
  *************** function _SetPulseOutLATxWork_M0_SHAKE_POL1_P0 *****************
  Defined at:
-		line 3416 in file "MotorDrive.c"
+		line 3423 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -5992,7 +5992,7 @@ Total ram usage:        1 bytes
 
  *************** function _ComparatorOn *****************
  Defined at:
-		line 2682 in file "MotorDrive.c"
+		line 2689 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -6021,7 +6021,7 @@ Total ram usage:        1 bytes
 
  *************** function _ComparatorOff *****************
  Defined at:
-		line 2663 in file "MotorDrive.c"
+		line 2670 in file "MotorDrive.c"
  Parameters:    Size  Location     Type
   motor_no        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -6174,13 +6174,13 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 mcc_generated_files/tmr2.c
-		_TMR2_ISR      		CODE           	1063	0000	5
-		_TMR2_Initialize		CODE           	13BA	0000	19
-		_TMR2_SetInterruptHandler		CODE           	1081	0000	9
-		_TMR2_StopTimer		CODE           	1057	0000	4
-		_TMR2_DefaultInterruptHandler		CODE           	1050	0000	2
-		_TMR2_CallBack 		CODE           	10BA	0000	12
-		_TMR2_StartTimer		CODE           	1054	0000	4
+		_TMR2_ISR      		CODE           	105B	0000	5
+		_TMR2_Initialize		CODE           	13B2	0000	19
+		_TMR2_SetInterruptHandler		CODE           	1079	0000	9
+		_TMR2_StopTimer		CODE           	104F	0000	4
+		_TMR2_DefaultInterruptHandler		CODE           	1048	0000	2
+		_TMR2_CallBack 		CODE           	10B2	0000	12
+		_TMR2_StartTimer		CODE           	104C	0000	4
 
 mcc_generated_files/tmr2.c estimated size: 55
 
@@ -6190,41 +6190,41 @@ mcc_generated_files/interrupt_manager.c
 mcc_generated_files/interrupt_manager.c estimated size: 25
 
 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
-		___wmul        		CODE           	1588	0000	28
+		___wmul        		CODE           	1568	0000	28
 
 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c estimated size: 28
 
 mcc_generated_files/pin_manager.c
-		_PIN_MANAGER_Initialize		CODE           	1522	0000	26
+		_PIN_MANAGER_Initialize		CODE           	1502	0000	26
 
 mcc_generated_files/pin_manager.c estimated size: 26
 
 spi_control.c
-		_SpiCmdFunc_EnableExcitating		CODE           	106B	0000	6
-		_SpiCmdFunc_SearchBasePosition		CODE           	171E	0000	42
-		_SpiCmdFunc_FwdPulseNormal		CODE           	16D6	0000	36
-		_SpiCmdFunc_RevPulseNormal		CODE           	1691	0000	35
-		_SPIControl_RecieveComannd		CODE           	13A8	0000	19
-		_SpiCmdFunc_Search1008Position		CODE           	1771	0000	44
-		_SpiCmdFunc_FwdPulsePositionCtl		CODE           	164F	0000	34
-		_SpiCmdFunc_FwdPulseWithShake		CODE           	1052	0000	2
-		_SpiCmdFunc_RevPulsePositionCtl		CODE           	1670	0000	34
-		_SpiCmdFunc_SearchLoadPosition		CODE           	1053	0000	2
+		_SpiCmdFunc_EnableExcitating		CODE           	1063	0000	6
+		_SpiCmdFunc_SearchBasePosition		CODE           	171C	0000	42
+		_SpiCmdFunc_FwdPulseNormal		CODE           	16D4	0000	36
+		_SpiCmdFunc_RevPulseNormal		CODE           	168F	0000	35
+		_SPIControl_RecieveComannd		CODE           	13A0	0000	19
+		_SpiCmdFunc_Search1008Position		CODE           	176F	0000	44
+		_SpiCmdFunc_FwdPulsePositionCtl		CODE           	164D	0000	34
+		_SpiCmdFunc_FwdPulseWithShake		CODE           	104A	0000	2
+		_SpiCmdFunc_RevPulsePositionCtl		CODE           	166E	0000	34
+		_SpiCmdFunc_SearchLoadPosition		CODE           	104B	0000	2
 		_SetFwdPulseWithCorrectProc		CODE           	0882	0000	65
-		_SpiCmdFunc_StopDetectVrs		CODE           	1060	0000	4
+		_SpiCmdFunc_StopDetectVrs		CODE           	1058	0000	4
 		_SPIControl_ExecuteCommand		CODE           	0B88	0000	116
-		_SpiCmdFunc_FwdPulseWithCorrect		CODE           	1613	0000	29
-		_SpiCmdFunc_Test		CODE           	1051	0000	2
-		_SPIControl_SetNotification		CODE           	15F7	0000	29
-		_SpiCmdFunc_DisableExcitating		CODE           	1070	0000	6
-		_SpiCmdFunc_StartDetectVrs		CODE           	105D	0000	4
+		_SpiCmdFunc_FwdPulseWithCorrect		CODE           	15F3	0000	29
+		_SpiCmdFunc_Test		CODE           	1049	0000	2
+		_SPIControl_SetNotification		CODE           	15D7	0000	29
+		_SpiCmdFunc_DisableExcitating		CODE           	1068	0000	6
+		_SpiCmdFunc_StartDetectVrs		CODE           	1055	0000	4
 
 spi_control.c estimated size: 509
 
 mcc_generated_files/spi.c
 		_SPI_Open      		CODE           	0910	0000	87
-		_SPI_ReadByte  		CODE           	105A	0000	4
-		_SPI_Initialize		CODE           	10A5	0000	11
+		_SPI_ReadByte  		CODE           	1052	0000	4
+		_SPI_Initialize		CODE           	109D	0000	11
 
 mcc_generated_files/spi.c estimated size: 102
 
@@ -6237,125 +6237,125 @@ shared
 		_TblM1PulseChangePosition		STRCODE        	181C	0000	26
 		_spi_configuration		STRCODE        	185A	0000	5
 		i1_TMR2_StopTimer		CODE           	0002	0000	3
-		i1_SetExcitatingOutOffData		CODE           	14F0	0000	26
+		i1_SetExcitatingOutOffData		CODE           	14D0	0000	26
 		_TblMaxSearchSteps		STRCODE        	1852	0000	5
 		_SpiCmmandFunction		STRCODE        	1800	0000	29
 
 shared estimated size: 300
 
 mcc_generated_files/mcc.c
-		_WDT_Initialize		CODE           	1067	0000	5
-		_OSCILLATOR_Initialize		CODE           	107B	0000	7
-		_SYSTEM_Initialize		CODE           	1407	0000	22
+		_WDT_Initialize		CODE           	105F	0000	5
+		_OSCILLATOR_Initialize		CODE           	1073	0000	7
+		_SYSTEM_Initialize		CODE           	13FF	0000	22
 
 mcc_generated_files/mcc.c estimated size: 34
 
 mcc_generated_files/tmr1.c
-		_TMR1_Initialize		CODE           	156E	0000	27
-		_TMR1_SetInterruptHandler		CODE           	1089	0000	9
+		_TMR1_Initialize		CODE           	154E	0000	27
+		_TMR1_SetInterruptHandler		CODE           	1081	0000	9
 		_TMR1_StopTimer		CODE           	07FE	0000	3
-		_TMR1_DefaultInterruptHandler		CODE           	104F	0000	2
-		_TMR1_CallBack 		CODE           	10AF	0000	12
-		_TMR1_WriteTimer		CODE           	111C	0000	16
-		_TMR1_ISR      		CODE           	10D0	0000	13
+		_TMR1_DefaultInterruptHandler		CODE           	1047	0000	2
+		_TMR1_CallBack 		CODE           	10A7	0000	12
+		_TMR1_WriteTimer		CODE           	1114	0000	16
+		_TMR1_ISR      		CODE           	10C8	0000	13
 
 mcc_generated_files/tmr1.c estimated size: 82
 
 MotorDrive.c
-		_MoveTargetPosition		CODE           	13DF	0000	20
-		_SetPulseOutLATxWork_M1_FWD_POL0_P1		CODE           	120C	0000	16
-		_SetPulseOutLATxWork_M1_REV_POL0_P1		CODE           	122A	0000	16
-		_SetPulseOutLATxWork_M1_FWD_POL1_P1		CODE           	11FD	0000	16
-		_SetPulseOutLATxWork_M1_REV_POL1_P1		CODE           	121B	0000	16
-		_SetAfterMotorStopFunc		CODE           	109B	0000	11
-		_GetIsMotorActive		CODE           	13F2	0000	22
-		_SetPulseOutLATxWork_M1_FWD_POL0_P2		CODE           	1239	0000	16
-		_SetPulseOutLATxWork_M1_REV_POL0_P2		CODE           	1257	0000	16
-		_SetPulseOutLATxWork_M1_FWD_POL1_P2		CODE           	1248	0000	16
-		_SetPulseOutLATxWork_M1_REV_POL1_P2		CODE           	1266	0000	16
+		_MoveTargetPosition		CODE           	13D7	0000	20
+		_SetPulseOutLATxWork_M1_FWD_POL0_P1		CODE           	1204	0000	16
+		_SetPulseOutLATxWork_M1_REV_POL0_P1		CODE           	1222	0000	16
+		_SetPulseOutLATxWork_M1_FWD_POL1_P1		CODE           	11F5	0000	16
+		_SetPulseOutLATxWork_M1_REV_POL1_P1		CODE           	1213	0000	16
+		_SetAfterMotorStopFunc		CODE           	1093	0000	11
+		_GetIsMotorActive		CODE           	13EA	0000	22
+		_SetPulseOutLATxWork_M1_FWD_POL0_P2		CODE           	1231	0000	16
+		_SetPulseOutLATxWork_M1_REV_POL0_P2		CODE           	124F	0000	16
+		_SetPulseOutLATxWork_M1_FWD_POL1_P2		CODE           	1240	0000	16
+		_SetPulseOutLATxWork_M1_REV_POL1_P2		CODE           	125E	0000	16
 		_WatchMotorDriveFinish		CODE           	0BFB	0000	122
 		_TMR2_Interrupt_SPK		CODE           	0784	0000	123
 		_SetOutPutLATX 		CODE           	0A39	0000	110
-		_InitPulsePositionTable		CODE           	12D3	0000	18
-		_SetPulseOutLATxWork_M1_SHAKE_POL0_OFF		CODE           	132A	0000	19
-		_SetPulseOutLATxWork_M1_SHAKE_POL1_OFF		CODE           	133C	0000	19
-		_SetPulseOutLATxWork_M0_FWD_POL0_OFF		CODE           	141C	0000	24
-		_SetPulseOutLATxWork_M0_REV_POL0_OFF		CODE           	1293	0000	17
-		_SetPulseOutLATxWork_M0_FWD_POL1_OFF		CODE           	1433	0000	24
-		_SetPulseOutLATxWork_M0_REV_POL1_OFF		CODE           	12A3	0000	17
-		_SetMotorStop  		CODE           	1372	0000	19
-		_ComparatorOn  		CODE           	15A3	0000	29
+		_InitPulsePositionTable		CODE           	12CB	0000	18
+		_SetPulseOutLATxWork_M1_SHAKE_POL0_OFF		CODE           	1322	0000	19
+		_SetPulseOutLATxWork_M1_SHAKE_POL1_OFF		CODE           	1334	0000	19
+		_SetPulseOutLATxWork_M0_FWD_POL0_OFF		CODE           	1414	0000	24
+		_SetPulseOutLATxWork_M0_REV_POL0_OFF		CODE           	128B	0000	17
+		_SetPulseOutLATxWork_M0_FWD_POL1_OFF		CODE           	142B	0000	24
+		_SetPulseOutLATxWork_M0_REV_POL1_OFF		CODE           	129B	0000	17
+		_SetMotorStop  		CODE           	136A	0000	19
+		_ComparatorOn  		CODE           	1583	0000	29
 		_InitPositionSearch		CODE           	0E1A	0000	161
-		_SetPulseOutLATxWork_M1_SHAKE_POL0_P0		CODE           	11EE	0000	16
-		_SetPulseOutLATxWork_M1_SHAKE_POL1_P0		CODE           	11DF	0000	16
+		_SetPulseOutLATxWork_M1_SHAKE_POL0_P0		CODE           	11E6	0000	16
+		_SetPulseOutLATxWork_M1_SHAKE_POL1_P0		CODE           	11D7	0000	16
 		_CalcMotorStepCounter		CODE           	05EB	0000	214
-		_SetMotorStart 		CODE           	1091	0000	11
-		_ComparatorOff 		CODE           	13CC	0000	20
-		_SetMotorPositionSearchStart		CODE           	162F	0000	33
-		_ActivateHandPosition		CODE           	1396	0000	19
-		_SetMotorCorrectPositionStart		CODE           	1747	0000	43
-		_SetDataTRISxWork_M0_SPK_POL0_SHORT		CODE           	1478	0000	25
-		_SetDataTRISxWork_M0_SPK_POL1_SHORT		CODE           	1490	0000	25
-		_SetDataTRISxWork_M1_SPK_POL0_SHORT		CODE           	14A8	0000	25
-		_SetDataTRISxWork_M1_SPK_POL1_SHORT		CODE           	14C0	0000	25
-		_ExcitatingOutOn		CODE           	16F9	0000	38
-		_SetDataTRISxWork_M0_SPK_POL0_OPEN		CODE           	11C1	0000	16
-		_SetDataTRISxWork_M0_SPK_POL1_OPEN		CODE           	11D0	0000	16
-		_UpdateTargetPosition		CODE           	16B3	0000	36
-		_SetDataTRISxWork_M1_SPK_POL0_OPEN		CODE           	1275	0000	16
-		_SetDataTRISxWork_M1_SPK_POL1_OPEN		CODE           	1284	0000	16
-		_DeactivateHandPosition		CODE           	1384	0000	19
-		_SpkComparatorOff		CODE           	110F	0000	14
-		_SetMotorDirection		CODE           	1509	0000	26
-		_SetMotorAddShakePulse		CODE           	153B	0000	26
-		_SetPulseOutLATxWork_M1_FWD_POL0_OFF		CODE           	144A	0000	24
-		_SetPulseOutLATxWork_M1_REV_POL0_OFF		CODE           	12B3	0000	17
-		_SetPulseOutLATxWork_M1_FWD_POL1_OFF		CODE           	1461	0000	24
-		_SetPulseOutLATxWork_M1_REV_POL1_OFF		CODE           	12C3	0000	17
+		_SetMotorStart 		CODE           	1089	0000	11
+		_ComparatorOff 		CODE           	13C4	0000	20
+		_SetMotorPositionSearchStart		CODE           	162D	0000	33
+		_ActivateHandPosition		CODE           	138E	0000	19
+		_SetMotorCorrectPositionStart		CODE           	1745	0000	43
+		_SetDataTRISxWork_M0_SPK_POL0_SHORT		CODE           	1470	0000	25
+		_SetDataTRISxWork_M0_SPK_POL1_SHORT		CODE           	1488	0000	25
+		_SetDataTRISxWork_M1_SPK_POL0_SHORT		CODE           	14A0	0000	25
+		_SetDataTRISxWork_M1_SPK_POL1_SHORT		CODE           	14B8	0000	25
+		_ExcitatingOutOn		CODE           	16F7	0000	38
+		_SetDataTRISxWork_M0_SPK_POL0_OPEN		CODE           	11B9	0000	16
+		_SetDataTRISxWork_M0_SPK_POL1_OPEN		CODE           	11C8	0000	16
+		_UpdateTargetPosition		CODE           	16B1	0000	36
+		_SetDataTRISxWork_M1_SPK_POL0_OPEN		CODE           	126D	0000	16
+		_SetDataTRISxWork_M1_SPK_POL1_OPEN		CODE           	127C	0000	16
+		_DeactivateHandPosition		CODE           	137C	0000	19
+		_SpkComparatorOff		CODE           	1107	0000	14
+		_SetMotorDirection		CODE           	14E9	0000	26
+		_SetMotorAddShakePulse		CODE           	151B	0000	26
+		_SetPulseOutLATxWork_M1_FWD_POL0_OFF		CODE           	1442	0000	24
+		_SetPulseOutLATxWork_M1_REV_POL0_OFF		CODE           	12AB	0000	17
+		_SetPulseOutLATxWork_M1_FWD_POL1_OFF		CODE           	1459	0000	24
+		_SetPulseOutLATxWork_M1_REV_POL1_OFF		CODE           	12BB	0000	17
 		_SetMotorFrequency		CODE           	0845	0000	62
-		_SetMotorBitMotorNo		CODE           	12F5	0000	18
-		_SetMotorStopSPK		CODE           	14D8	0000	25
-		_SetDataTRISxWork_SPK_SHORT		CODE           	15BF	0000	29
-		_SetMotorStepCounter		CODE           	1102	0000	14
+		_SetMotorBitMotorNo		CODE           	12ED	0000	18
+		_SetMotorStopSPK		CODE           	160F	0000	31
+		_SetDataTRISxWork_SPK_SHORT		CODE           	159F	0000	29
+		_SetMotorStepCounter		CODE           	10FA	0000	14
 		_UpdataHandPosition		CODE           	0EBA	0000	161
-		_SetMotorEnableExcitating		CODE           	1360	0000	19
-		_SpkVrsCheck   		CODE           	10F5	0000	14
-		_SetPulseOutLATxWork_M0_FWD_POL0_P1		CODE           	1158	0000	16
-		_SetPulseOutLATxWork_M0_REV_POL0_P1		CODE           	1176	0000	16
-		_SetPulseOutLATxWork_M0_FWD_POL1_P1		CODE           	1149	0000	16
-		_SetPulseOutLATxWork_M0_REV_POL1_P1		CODE           	1167	0000	16
+		_SetMotorEnableExcitating		CODE           	1358	0000	19
+		_SpkVrsCheck   		CODE           	10ED	0000	14
+		_SetPulseOutLATxWork_M0_FWD_POL0_P1		CODE           	1150	0000	16
+		_SetPulseOutLATxWork_M0_REV_POL0_P1		CODE           	116E	0000	16
+		_SetPulseOutLATxWork_M0_FWD_POL1_P1		CODE           	1141	0000	16
+		_SetPulseOutLATxWork_M0_REV_POL1_P1		CODE           	115F	0000	16
 		_SetDataTRISxWork_SPK_OPEN		CODE           	17C8	0000	57
 		_CorrectPosition		CODE           	080B	0000	59
-		_SetPulseOutLATxWork_M0_FWD_POL0_P2		CODE           	1185	0000	16
-		_SetPulseOutLATxWork_M0_REV_POL0_P2		CODE           	11A3	0000	16
-		_SetPulseOutLATxWork_M0_FWD_POL1_P2		CODE           	1194	0000	16
-		_SetPulseOutLATxWork_M0_REV_POL1_P2		CODE           	11B2	0000	16
+		_SetPulseOutLATxWork_M0_FWD_POL0_P2		CODE           	117D	0000	16
+		_SetPulseOutLATxWork_M0_REV_POL0_P2		CODE           	119B	0000	16
+		_SetPulseOutLATxWork_M0_FWD_POL1_P2		CODE           	118C	0000	16
+		_SetPulseOutLATxWork_M0_REV_POL1_P2		CODE           	11AA	0000	16
 		_DetermineBasePosition		CODE           	0F5A	0000	167
-		_SetMotorDisableExcitating		CODE           	134E	0000	19
-		_SetExcitatingOutOffData		CODE           	15DB	0000	29
+		_SetMotorDisableExcitating		CODE           	1346	0000	19
+		_SetExcitatingOutOffData		CODE           	15BB	0000	29
 		_StartPulseOutM0		CODE           	0AA6	0000	113
 		_StartPulseOutM1		CODE           	0B16	0000	115
-		_SetPulseOutLATxWork_M0_SHAKE_POL0_OFF		CODE           	1306	0000	19
-		_SetPulseOutLATxWork_M0_SHAKE_POL1_OFF		CODE           	1318	0000	19
+		_SetPulseOutLATxWork_M0_SHAKE_POL0_OFF		CODE           	12FE	0000	19
+		_SetPulseOutLATxWork_M0_SHAKE_POL1_OFF		CODE           	1310	0000	19
 		_AfterDetectedLoadPosition		CODE           	005D	0000	926
 		_PriorUpdateCorrentPosition		CODE           	08C2	0000	79
-		_ExcitatingOutOff		CODE           	10E8	0000	14
+		_ExcitatingOutOff		CODE           	10E0	0000	14
 		_TMR2_Interrupt		CODE           	03FA	0000	498
-		_SetPulseOutLATxWork_M0_SHAKE_POL0_P0		CODE           	113A	0000	16
-		_VrsCheck      		CODE           	1554	0000	27
-		_SetPulseOutLATxWork_M0_SHAKE_POL1_P0		CODE           	112B	0000	16
+		_SetPulseOutLATxWork_M0_SHAKE_POL0_P0		CODE           	1132	0000	16
+		_VrsCheck      		CODE           	1534	0000	27
+		_SetPulseOutLATxWork_M0_SHAKE_POL1_P0		CODE           	1123	0000	16
 		_SpkComparatorOn		CODE           	0800	0000	12
 		_SetDriveType  		CODE           	0D85	0000	150
-		_SetAfterDetectLoadFunc		CODE           	10C5	0000	12
+		_SetAfterDetectLoadFunc		CODE           	10BD	0000	12
 		_SaveLoadPosition		CODE           	0C74	0000	132
-		_SetMotorStartSPK		CODE           	179C	0000	45
+		_SetMotorStartSPK		CODE           	179A	0000	47
 		_VerifyHandPosition_LoadPosition		CODE           	06C0	0000	197
 		_UpdateCurrentPositionByFinePosition		CODE           	0CF7	0000	143
 
-MotorDrive.c estimated size: 4994
+MotorDrive.c estimated size: 5002
 
 mcc_generated_files/dac.c
-		_DAC_Initialize		CODE           	1075	0000	7
+		_DAC_Initialize		CODE           	106D	0000	7
 
 mcc_generated_files/dac.c estimated size: 7
 
@@ -6365,7 +6365,7 @@ main.c
 main.c estimated size: 103
 
 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul8.c
-		___bmul        		CODE           	12E4	0000	18
+		___bmul        		CODE           	12DC	0000	18
 
 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul8.c estimated size: 18
 

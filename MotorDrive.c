@@ -1137,29 +1137,28 @@ void TMR2_Interrupt_SPK(void)
         TRISA = dataTRISA;
         TRISB = dataTRISB;
         TRISC = dataTRISC;
+    }
+    /**-- 励磁OFF時のマスク時間チェック--**/
+    if (excitatingOffMaskTime > 0) {//励磁OFF後のマスクタイム時間セットされているなら
 
-        /**-- 励磁OFF時のマスク時間チェック--**/
-        if (excitatingOffMaskTime > 0) {//励磁OFF後のマスクタイム時間セットされているなら
-
-            excitatingOffMaskTime--;
-            PIR2bits.C1IF = 0; //マスク期間のVrsを無効に
-            PIR2bits.C2IF = 0;
+        excitatingOffMaskTime--;
+        PIR2bits.C1IF = 0; //マスク期間のVrsを無効に
+        PIR2bits.C2IF = 0;
 
 
-        }
+    }
 
-        /**-- Vrsチェック要求確認 --**/
-        if ((spkReqVrsCheckBit & BIT_MOTOR_M0) || (spkReqVrsCheckBit & BIT_MOTOR_M1)) {
-            spkReqVrsCheckBit &= (UB) (~(BIT_MOTOR_M0 | BIT_MOTOR_M1));
+    /**-- Vrsチェック要求確認 --**/
+    if ((spkReqVrsCheckBit & BIT_MOTOR_M0) || (spkReqVrsCheckBit & BIT_MOTOR_M1)) {
+        spkReqVrsCheckBit &= (UB) (~(BIT_MOTOR_M0 | BIT_MOTOR_M1));
 
-            if (excitatingOffMaskTime == 0) {//マスク時間終了しているなら
+        if (excitatingOffMaskTime == 0) {//マスク時間終了しているなら
 
-                SpkVrsCheck(); //M0,M1 Vrsチェック
-            }
-
+            SpkVrsCheck(); //M0,M1 Vrsチェック
         }
 
     }
+
 
     /**-- 励磁ON時間チェック --**/
     if (excitatingTime > 0) {//励磁ON時間セットされているなら
